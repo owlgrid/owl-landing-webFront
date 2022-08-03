@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from '../../../components/Text';
 import { HeaderBanner } from '../HeaderBanner';
 
 export const Header = () => {
@@ -79,9 +80,9 @@ export const Header = () => {
                             <p className="w-full mb-4 font-semibold text-left text-indigo-500 md:text-lg sm:text-center sm:w-auto xl:text-xl md:mb-6">
                                 Workflows-based cloud platform
                             </p>
-                            <h1 className="w-full mb-8 text-4xl font-bold text-left text-black-800 sm:w-auto sm:text-center sm:text-6xl lg:text-8xl md:mb-12">
+                            <Text style="h1" align="center">
                                 Create cloud applications in a minute.
-                            </h1>
+                            </Text>
                             <p className="max-w-xl mb-8 leading-relaxed text-left text-gray-500 xl:text-xl sm:text-center md:mb-12">
                                 OwlGrid allows product and IT teams to quickly and easily implement solutions in the
                                 cloud.
