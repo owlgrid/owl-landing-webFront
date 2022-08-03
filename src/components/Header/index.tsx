@@ -1,11 +1,11 @@
 import React from 'react';
+import { HeaderBanner } from '../HeaderBanner';
 
 export const Header = () => {
-
-    const defaultTitle = "OwlGrid";
-    const title = "OwlGrid";
-    const metaDescription = "OwlGrid";
-    const author = "OwlGrid Team";
+    const defaultTitle = 'OwlGrid';
+    const title = 'OwlGrid';
+    const metaDescription = 'OwlGrid';
+    const author = 'OwlGrid Team';
 
     return (
         <>
@@ -20,26 +20,7 @@ export const Header = () => {
             <meta name="twitter:description" content={metaDescription} />
 
             <section className="relative w-full pb-6 bg-white sm:pb-8 lg:pb-12 tails-selected-element">
-                <div className="relative z-20 flex items-center justify-center w-full h-12 px-5 overflow-hidden text-xs font-normal cursor-pointer bg-gradient-to-r from-indigo-500 via-blue-400 to-green-400 text-blue-50">
-                    <div className="relative flex items-center justify-center w-full h-full mx-auto max-w-7xl">
-                        <svg
-                            className="w-4 h-4 mr-1 text-blue-100 stroke-current"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
-                                className=""
-                            ></path>
-                        </svg>
-                        <span className="hidden sm:inline-block">Click here to stay informed about the project</span>
-                    </div>
-                </div>
+                <HeaderBanner />
                 <div className="relative z-20 px-10 mx-auto max-w-7xl">
                     <div className="relative flex items-center justify-between py-4 mb-8 border-b md:py-8 md:mb-12 xl:mb-16">
                         <a href="#_" className="inline-flex items-center text-2xl font-bold text-black-800">
@@ -98,11 +79,12 @@ export const Header = () => {
                             <p className="w-full mb-4 font-semibold text-left text-indigo-500 md:text-lg sm:text-center sm:w-auto xl:text-xl md:mb-6">
                                 Workflows-based cloud platform
                             </p>
-                            <h1 className="w-full mb-8 text-4xl font-bold text-left text-black-800 sm:w-auto sm:text-center sm:text-5xl lg:text-8xl md:mb-12">
+                            <h1 className="w-full mb-8 text-4xl font-bold text-left text-black-800 sm:w-auto sm:text-center sm:text-6xl lg:text-8xl md:mb-12">
                                 Create cloud applications in a minute.
                             </h1>
                             <p className="max-w-xl mb-8 leading-relaxed text-left text-gray-500 xl:text-xl sm:text-center md:mb-12">
-                                OwlGrid allows product and IT teams to quickly and easily implement solutions in the cloud.
+                                OwlGrid allows product and IT teams to quickly and easily implement solutions in the
+                                cloud.
                             </p>
                             <div className="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">
                                 <a

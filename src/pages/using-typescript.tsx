@@ -8,7 +8,8 @@ type DataProps = {
     };
 };
 
-const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, location }) => (<p>heloo</p>
+const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, location }) => (
+    <p>heloo</p>
     // <Layout>
     //     <h1>
     //         Gatsby supports <b>TypeScript by default</b>
