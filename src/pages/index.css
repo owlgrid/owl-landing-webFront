@@ -1,0 +1,8 @@
+.swiper-slide {
+    flex-shrink: 1 !important;
+}
+
+.swiper-pagination-horizontal, .swiper-pagination-progressbar {
+    bottom: 0px;
+    top: auto !important;
+}
