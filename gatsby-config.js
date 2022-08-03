@@ -1,72 +1,33 @@
-require("dotenv").config({
-    path: `.env.${process.env.NODE_ENV}`,
-});
-
 module.exports = {
     siteMetadata: {
-        siteUrl: "https://owlgrid.com",
-        title: "OwlGrid",
-        titleTemplate: "OwlGrid – %s",
-        description: "Create cloud applications in a minute.",
-        url: "https://owlgrid.com",
-        image: "/images/logo.png"
+        title: `Gatsby Default Starter`,
+        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        author: `@gatsbyjs`,
+        siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     },
     plugins: [
+        `gatsby-plugin-image`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `images`,
                 path: `${__dirname}/src/images`,
             },
         },
-        {
-            resolve: "gatsby-plugin-anchor-links",
-            options: {
-                offset: -80,
-                duration: 500,
-            }
-        },
-        "gatsby-plugin-image",
-        "gatsby-plugin-netlify",
-        {
-            resolve: 'gatsby-plugin-robots-txt',
-            options: {
-                host: 'https://owlgrid.com',
-                sitemap: 'https://owlgrid.com/sitemap.xml',
-                policy: [{ userAgent: '*', allow: '/' }]
-            }
-        },
-        "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sitemap",
-        // {
-        //     resolve: `gatsby-transformer-remark`,
-        //     options: {
-        //         plugins: [
-        //             {
-        //                 resolve: `gatsby-remark-images`,
-        //                 options: {
-        //                     maxWidth: 590,
-        //                 },
-        //             },
-        //         ],
-        //     },
-        // },
-        {
-            resolve: "gatsby-plugin-manifest",
-            options: {
-                icon: "src/images/icon.png",
-            },
-        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: "OwlGrid",
-                short_name: "OwlGrid",
-                start_url: "/",
-                background_color: "#111220",
-                theme_color: "#111220",
-                display: "standalone",
-                icon: "static/images/icon.png",
-                crossOrigin: `use-credentials`
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                // This will impact how browsers show your PWA/website
+                // https://css-tricks.com/meta-theme-color-and-trickery/
+                // theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
     ],
