@@ -21,6 +21,12 @@ module.exports = {
                 purgeOnly: ['src/css/index.css'],
             },
         },
+        {
+            resolve: 'gatsby-plugin-anchor-links',
+            options: {
+                duration: 500,
+            },
+        },
         `gatsby-plugin-typescript`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,

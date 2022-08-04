@@ -1,8 +1,10 @@
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import React from 'react';
+import { Text } from '../../../components/Text';
 
 export const HeaderBanner = () => {
     return (
-        <div className="relative z-20 flex items-center justify-center w-full h-12 px-5 overflow-hidden text-xs font-normal cursor-pointer bg-gradient-to-r from-indigo-500 via-blue-400 to-green-400 text-blue-50">
+        <div className="relative pt-6 pb-6 z-20 flex items-center justify-center w-full overflow-hidden font-normal cursor-pointer bg-gradient-to-r from-indigo-500 via-blue-400 to-green-400 text-blue-50">
             <div className="relative flex items-center justify-center w-full h-full mx-auto max-w-7xl">
                 <svg
                     className="w-4 h-4 mr-1 text-blue-100 stroke-current"
@@ -19,7 +21,9 @@ export const HeaderBanner = () => {
                         className=""
                     ></path>
                 </svg>
-                <span className="hidden sm:inline-block">Click here to stay informed about the project</span>
+                <AnchorLink to="/#contact">
+                    <Text style="bannerMessage">Click here to stay informed about the project</Text>
+                </AnchorLink>
             </div>
         </div>
     );

@@ -3,8 +3,10 @@ import './../styles/global.css';
 
 import { Home } from './Home';
 
-export const IndexPage = () => (
+const IndexPage = () => (
     <>
         <Home />
     </>
 );
+
+export default IndexPage;

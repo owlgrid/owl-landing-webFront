@@ -16,7 +16,7 @@ export const Features = () => {
     ];
 
     return (
-        <section className="bg-gray-100 tails-selected-element relative">
+        <section className="bg-gray-100 tails-selected-element relative" id="features">
             <div className="absolute inset-0 w-screen h-full pb-20 transform opacity-50">
                 <img
                     src="https://cdn.devdojo.com/images/march2021/bg-gradient.png"
