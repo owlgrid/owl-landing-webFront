@@ -7,9 +7,9 @@ export const QnA = () => {
             data-tails-scripts="//unpkg.com/alpinejs"
             id="about"
         >
-            <div className="max-w-4xl px-8 mx-auto lg:px-16">
+            <div className="px-20 mx-auto max-w-7xl">
                 <h2 className="mb-2 text-xl font-bold text-center md:text-3xl">Frequently Asked Questions</h2>
-                <div className="relative mt-2 mt-12 space-y-5">
+                <div className="relative mt-2 mt-12 space-y-5 px-20">
                     <div
                         x-data="{ show: false }"
                         className="relative overflow-hidden border-2 border-gray-200 rounded-lg select-none hover:bg-white"

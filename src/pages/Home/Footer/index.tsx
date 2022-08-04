@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer = () => {
     return (
-        <footer className="pb-6 pt-16 bg-white tails-selected-element">
+        <footer className="pb-6 pt-16 px-20 mx-auto max-w-7xl bg-white tails-selected-element">
             <div className="max-w-6xl xl:max-w-6xl mx-auto px-10 md:px-8">
                 <ul className="text-sm font-medium pb-10  sm:pb-20 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-10">
                     <li className="space-y-5 row-span-2">

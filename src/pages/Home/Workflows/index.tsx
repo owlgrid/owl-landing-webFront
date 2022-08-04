@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Workflows = () => {
     return (
-        <section className="w-full px-8 pt-20 pb-16 bg-white xl:px-0 tails-selected-element">
+        <section className="w-full px-8 pt-20 pb-16 bg-white xl:px-0 tails-selected-element px-20 mx-auto max-w-7xl">
             <div className="flex flex-col items-start max-w-6xl mx-auto md:flex-row">
                 <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">img</div>
                 <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">

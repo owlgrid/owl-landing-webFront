@@ -2,11 +2,11 @@ import React from 'react';
 
 export const Contact = () => {
     return (
-        <section className="py-24 bg-white tails-selected-element" id="contact">
-            <div className="max-w-3xl px-10 mx-auto xl:px-5">
+        <section className="py-24 bg-white tails-selected-element px-20 mx-auto max-w-7xl" id="contact">
+            <div className="px-20 mx-auto max-w-7xl">
                 <div className="flex flex-col justify-center space-y-8">
                     <h2 className="w-full mx-auto text-4xl font-bold leading-none text-left text-gray-800 sm:text-5xl md:text-7xl">
-                        Keep in touch!
+                        Stay in touch!
                     </h2>
                     <p className="w-full max-w-3xl mx-auto text-xl text-left text-gray-500 md:text-xl">
                         Are you interested in OwlGrid? Enter your email address to stay informed of the product
