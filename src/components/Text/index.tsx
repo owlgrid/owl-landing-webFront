@@ -46,11 +46,11 @@ const generateHtmlTag = (style: TextProps['style']): string => {
 const generateClasses = (style: TextProps['style']): string => {
     switch (style) {
         case 'h1':
-            return 'w-full mb-8 text-4xl font-bold text-black-800 sm:w-auto sm:text-center sm:text-6xl lg:text-8xl md:mb-12';
+            return 'w-full mb-8 text-4xl font-bold text-black-800 sm:w-auto sm:text-center text-5xl lg:text-8xl md:mb-12';
         case 'headerLine1':
             return 'w-full mb-8 font-semibold text-indigo-500 text-xl sm:text-center sm:w-auto';
         case 'headerLine3':
-            return 'max-w-xl font-medium mb-8 text-left text-gray-500 xl:text-xl sm:text-center md:mb-12';
+            return 'max-w-xl font-medium mb-8 text-left text-gray-500 text-xl sm:text-center md:mb-12';
         case 'link':
             return 'text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500';
         case 'anchor':

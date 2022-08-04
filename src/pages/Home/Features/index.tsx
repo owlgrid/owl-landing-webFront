@@ -13,18 +13,43 @@ export const Features = () => {
             description: 'Easily manage the users of your application. Allow access to specific areas and sections.',
             icon: '',
         },
+        {
+            title: 'User management',
+            description: 'Easily manage the users of your application. Allow access to specific areas and sections.',
+            icon: '',
+        },
+        {
+            title: 'User management',
+            description: 'Easily manage the users of your application. Allow access to specific areas and sections.',
+            icon: '',
+        },
+        {
+            title: 'User management',
+            description: 'Easily manage the users of your application. Allow access to specific areas and sections.',
+            icon: '',
+        },
+        {
+            title: 'User management',
+            description: 'Easily manage the users of your application. Allow access to specific areas and sections.',
+            icon: '',
+        },
+        {
+            title: 'User management',
+            description: 'Easily manage the users of your application. Allow access to specific areas and sections.',
+            icon: '',
+        },
     ];
 
     return (
         <section className="bg-gray-100 tails-selected-element relative" id="features">
-            <div className="absolute inset-0 w-screen h-full pb-20 transform opacity-50">
+            <div className="absolute inset-0 w-screen h-full pb-20 transform">
                 <img
                     src="https://cdn.devdojo.com/images/march2021/bg-gradient.png"
                     className="absolute left-0 object-cover w-full h-full rotate-180"
                 />
             </div>
-            <div className="relative px-6 py-8 ml-auto mr-auto bg-top bg-cover sm:py-16 max-w-7xl md:px-24 lg:px-16 lg:py-20 flex flex-col">
-                <h3 className="w-full font-bold tracking-normal text-center text-gray-800 text-2xl sm:text-5xl md:text-4xl leading-none mb-8">
+            <div className="relative px-12 py-10 ml-auto mr-auto bg-top bg-cover sm:py-12 max-w-7xl md:px-24 lg:px-16 lg:py-16 flex flex-col">
+                <h3 className="w-full font-bold tracking-normal text-center text-gray-800 text-2xl sm:text-5xl md:text-4xl leading-none mb-8 text-white mb-12">
                     Ready-to-use resources:
                 </h3>
                 <div className="relative grid gap-6 bg-top bg-cover sm:grid-cols-2 lg:grid-cols-4">
