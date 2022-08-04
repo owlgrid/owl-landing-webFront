@@ -8,7 +8,7 @@ export const windowGlobal = () => {
         return null;
     }
     return window;
-}
+};
 
 /**
  * This function check if the document call is done in a browser or during the SSR
@@ -20,4 +20,4 @@ export const documentGlobal = () => {
         return null;
     }
     return document;
-}
+};

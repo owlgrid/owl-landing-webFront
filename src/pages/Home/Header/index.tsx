@@ -18,6 +18,12 @@ const SectionImageCover = styled((props) => <div {...props} />)`
     text-align: center;
 `;
 
+const DivFullHeight = styled((props) => <div {...props} />)`
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 72px);
+`;
+
 export const Header = () => {
     const defaultTitle = 'OwlGrid';
     const title = 'OwlGrid';
@@ -37,9 +43,10 @@ export const Header = () => {
             <meta name="twitter:description" content={metaDescription} />
 
             <SectionImageCover src={'http://devdojo.com.s3.us-east-1.amazonaws.com/tails/images/mesh-bg-blue.svg'}>
-                <section className="relative w-full tails-selected-element h-screen flex flex-col">
+                <section className="relative w-full tails-selected-element min-h-screen flex flex-col">
                     <HeaderBanner />
-                    <div className="relative z-20 px-10 mx-auto max-w-7xl h-full flex flex-col">
+                    <DivFullHeight className="z-20 px-10 mx-auto max-w-7xl h-full flex flex-col">
+                        {/* min-height: calc(100vh - 72px); */}
                         <div className="relative flex items-center justify-between py-4 mb-8 border-b md:py-8 md:mb-12 xl:mb-16">
                             <AnchorLink to="/">
                                 <a href="/" className="inline-flex items-center text-2xl font-bold text-black-800">
@@ -127,7 +134,7 @@ export const Header = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </DivFullHeight>
                     {/* <div className="absolute inset-0 z-10 flex items-end w-full h-full bg-cover opacity-70">
                         <img
                             src="http://devdojo.com.s3.us-east-1.amazonaws.com/tails/images/mesh-bg-blue.svg"

@@ -2,7 +2,11 @@ import React from 'react';
 
 export const QnA = () => {
     return (
-        <section className="py-24 bg-gray-50 tails-selected-element" data-tails-scripts="//unpkg.com/alpinejs" id="about">
+        <section
+            className="py-24 bg-gray-50 tails-selected-element"
+            data-tails-scripts="//unpkg.com/alpinejs"
+            id="about"
+        >
             <div className="max-w-4xl px-8 mx-auto lg:px-16">
                 <h2 className="mb-2 text-xl font-bold text-center md:text-3xl">Frequently Asked Questions</h2>
                 <div className="relative mt-2 mt-12 space-y-5">

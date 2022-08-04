@@ -1,24 +1,24 @@
 import React, { ReactElement } from 'react';
 import parse from 'html-react-parser';
-import { documentGlobal, windowGlobal } from "../../utils/environment";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { documentGlobal, windowGlobal } from '../../utils/environment';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 type TextProps = {
     style:
-    | 'h1'
-    | 'h2'
-    | 'h3'
-    | 'h4'
-    | 'h5'
-    | 'h6'
-    | 'p'
-    | 'span'
-    | 'a'
-    | 'headerLine1'
-    | 'headerLine3'
-    | 'link'
-    | 'bannerMessage'
-    | 'anchor';
+        | 'h1'
+        | 'h2'
+        | 'h3'
+        | 'h4'
+        | 'h5'
+        | 'h6'
+        | 'p'
+        | 'span'
+        | 'a'
+        | 'headerLine1'
+        | 'headerLine3'
+        | 'link'
+        | 'bannerMessage'
+        | 'anchor';
     align?: 'left' | 'center' | 'right';
     children: ReactElement | string;
     url?: string;
@@ -63,7 +63,9 @@ const generateClasses = (style: TextProps['style']): string => {
 };
 
 // si un # et que l'url de la page actuelle (sans le #) est le même que l'url à pointer, on utilise un hashlink
-const hashLink = (url: string | undefined) => (windowGlobal() && !external && url && url.includes('#') && url.split('#')[0] === window.location.pathname) || false;
+const hashLink = (url: string | undefined) =>
+    (windowGlobal() && !external && url && url.includes('#') && url.split('#')[0] === window.location.pathname) ||
+    false;
 
 const generateClass = (
     style: TextProps['style'],
@@ -74,14 +76,14 @@ const generateClass = (
     parse(
         // `${hashLink(url) && `<HashLink to="${url}">`}` +
         `<${generateHtmlTag(style)} ` +
-        `className="${generateClasses(style)} ` +
-        `${generateTextAlign(align)}" ` +
-        `${url && ' href="' + url + '"'}>` +
-        `${children}` +
-        `</${generateHtmlTag(style)}>`
+            `className="${generateClasses(style)} ` +
+            `${generateTextAlign(align)}" ` +
+            `${url && ' href="' + url + '"'}>` +
+            `${children}` +
+            `</${generateHtmlTag(style)}>`,
         // `${hashLink(url) && `</HashLink>`}`
     );
 
 export const Text = ({ style, align, children, url }: TextProps): ReactElement => {
-    return <>{generateClass(style, align, children, url)}</>
+    return <>{generateClass(style, align, children, url)}</>;
 };
