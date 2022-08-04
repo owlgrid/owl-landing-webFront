@@ -1946,6 +1946,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@owlgrid-dev/prettier-config@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@owlgrid-dev/prettier-config/-/prettier-config-0.0.1.tgz#f633105d1aaa0e0378d7544ad6cf2a1a4fe50f4c"
+  integrity sha512-t8volCRtt00UgJocxqG46VkL7OiYYT0zhj15wBAMyd1rZDZwUfnLraNTVmHTY9XeOMT+K8EWx9MWowL1uNRbnA==
+
 "@parcel/bundler-default@2.6.2":
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/@parcel/bundler-default/-/bundler-default-2.6.2.tgz#bfa1be22af985ba2d6dbf1890a36ad4553f819d4"
@@ -6467,6 +6472,13 @@ graphql@^15.7.2:
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
   integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
+
+gthibaud-icons-react@^17.4.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/gthibaud-icons-react/-/gthibaud-icons-react-17.4.0.tgz#e6af76b15c1355d889e9b1114664aad93130ebeb"
+  integrity sha512-ojBPTM1vVoZye6lZ1dkcFUBoPHju7TcpidsC0hh+6AyF0YPGbdGGm2wo/IVf0zn5rrmO+i+Xdqub713hiZ/Adw==
+  dependencies:
+    "@owlgrid-dev/prettier-config" "0.0.1"
 
 gzip-size@^6.0.0:
   version "6.0.0"

@@ -78,7 +78,7 @@ export const Header = () => {
                             <AnchorLink to="/#contact">
                                 <a
                                     href=""
-                                    className="hidden px-8 py-3 text-sm font-semibold text-center text-gray-500 transition duration-100 bg-gray-100 rounded-md outline-none lg:inline-block hover:bg-gray-200 hover:text-gray-600 md:text-base"
+                                    className="hidden px-8 py-3 text-m font-semibold text-center text-gray-500 transition duration-100 bg-gray-100 rounded-md outline-none lg:inline-block hover:bg-gray-200 hover:text-gray-600 md:text-base"
                                 >
                                     Stay in touch
                                 </a>
@@ -103,7 +103,7 @@ export const Header = () => {
                             </button>
                         </div>
                         <div className="flex flex-col items-start sm:items-center mt-auto mb-auto">
-                            <div className="flex flex-col items-center max-w-4xl pt-8 pb-0 text-center lg:pt-12 sm:pb-16 lg:pb-32">
+                            <div className="flex flex-col items-center max-w-4xl text-center pb-12">
                                 <Text style="headerLine1" align="center">
                                     Workflows-based cloud platform
                                 </Text>
@@ -118,7 +118,7 @@ export const Header = () => {
                                     <AnchorLink to="/#contact">
                                         <a
                                             href=""
-                                            className="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-500 rounded-md outline-none hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 md:text-base"
+                                            className="inline-block px-8 py-3 text-lg font-semibold text-center text-white transition duration-100 bg-indigo-500 rounded-md outline-none hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300"
                                         >
                                             Stay in touch
                                         </a>
@@ -126,7 +126,7 @@ export const Header = () => {
                                     <AnchorLink to="/#philosophy">
                                         <a
                                             href=""
-                                            className="inline-block px-8 py-3 text-sm font-semibold text-center text-gray-500 transition duration-100 bg-white border rounded-md outline-none hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 md:text-base"
+                                            className="inline-block px-8 py-3 text-lg font-semibold text-center text-gray-500 transition duration-100 bg-white border rounded-md outline-none hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300"
                                         >
                                             Learn More
                                         </a>
