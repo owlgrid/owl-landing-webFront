@@ -2,7 +2,10 @@ import React from 'react';
 
 export const Philosphy = () => {
     return (
-        <section className="w-full px-8 pt-20 pb-16 bg-white xl:px-0 tails-selected-element px-20 mx-auto max-w-7xl" id="philosophy">
+        <section
+            className="w-full px-8 pt-20 pb-16 bg-white xl:px-0 tails-selected-element px-20 mx-auto max-w-7xl"
+            id="philosophy"
+        >
             <div className="flex flex-col items-start max-w-6xl mx-auto md:flex-row">
                 <h3 className="w-full text-2xl font-bold tracking-normal text-gray-800 sm:text-2xl md:text-4xl md:pr-10 lg:pr-16 xl:pr-20 leading-none md:-mt-2 md:w-1/2">
                     A better way of doing cloud.
