@@ -27,7 +27,6 @@
         "@types/styled-components": "^5.1.25",
         "@types/typescript": "^2.0.0",
         "autoprefixer": "^10.4.8",
-        "gatsby-plugin-eslint": "^4.0.2",
         "gatsby-plugin-postcss": "^5.20.0",
         "gatsby-plugin-purgecss": "^6.1.2",
         "gatsby-plugin-react-helmet": "^5.20.0",

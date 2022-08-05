@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text } from '../../../components/Text';
+import Text from '../../../components/Text';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { Link } from 'gatsby';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className="pb-6 pt-16 px-12 mx-auto max-w-7xl bg-white tails-selected-element">
             <div className="max-w-6xl xl:max-w-6xl mx-auto md:px-8">
@@ -89,3 +89,5 @@ export const Footer = () => {
         </footer>
     );
 };
+
+export default Footer;

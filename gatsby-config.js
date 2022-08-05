@@ -39,18 +39,6 @@ module.exports = {
             },
         },
         {
-            resolve: 'gatsby-plugin-eslint',
-            options: {
-                test: /\.ts$|\.tsx$/,
-                exclude: /(node_modules|.cache|public)/,
-                stages: ['develop', 'build-javascript'],
-                options: {
-                    emitWarning: true,
-                    failOnError: false,
-                },
-            },
-        },
-        {
             resolve: 'gatsby-plugin-manifest',
             options: {
                 icon: 'src/images/logo.png',

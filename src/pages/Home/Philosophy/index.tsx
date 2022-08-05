@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text } from '../../../components/Text';
+import Text from '../../../components/Text';
 
-export const Philosphy = () => {
+const Philosphy = () => {
     return (
         <section
             className="w-full px-8 pt-20 pb-16 bg-white xl:px-0 tails-selected-element px-20 mx-auto max-w-7xl"
@@ -29,3 +29,5 @@ export const Philosphy = () => {
         </section>
     );
 };
+
+export default Philosphy;

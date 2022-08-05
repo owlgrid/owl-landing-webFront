@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text } from '../../../components/Text';
+import Text from '../../../components/Text';
 
-export const Contact = () => {
+const Contact = () => {
     return (
         <section className="py-24 bg-white tails-selected-element px-12 mx-auto" id="contact">
             <div className="flex flex-col justify-center space-y-8 items-center">
@@ -28,3 +28,5 @@ export const Contact = () => {
         </section>
     );
 };
+
+export default Contact;

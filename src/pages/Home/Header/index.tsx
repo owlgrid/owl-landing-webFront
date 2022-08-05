@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text } from '../../../components/Text';
-import { HeaderBanner } from '../HeaderBanner';
+import Text from '../../../components/Text';
 import styled from 'styled-components';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { StaticImage } from 'gatsby-plugin-image';
+import HeaderBanner from '../HeaderBanner';
 
 const SectionImageCover = styled((props) => <div {...props} />)`
     background-image: url(${({ src }) => src});
@@ -25,7 +25,7 @@ const DivFullHeight = styled((props) => <div {...props} />)`
     min-height: calc(100vh - 72px);
 `;
 
-export const Header = () => {
+const Header = () => {
     const defaultTitle = 'OwlGrid';
     const title = 'OwlGrid';
     const metaDescription = 'OwlGrid';
@@ -155,3 +155,5 @@ export const Header = () => {
         </>
     );
 };
+
+export default Header;

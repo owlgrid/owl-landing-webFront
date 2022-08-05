@@ -115,6 +115,8 @@ const generateClass = (
         children,
     );
 
-export const Text = ({ style, align, children, url, customStyle }: TextProps): ReactElement => {
+const Text = ({ style, align, children, url, customStyle }: TextProps): ReactElement => {
     return <>{generateClass(style, align, children, url, customStyle)}</>;
 };
+
+export default Text;

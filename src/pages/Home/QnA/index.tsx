@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const QnA = () => {
+const QnA = () => {
     return (
         <section
             className="py-24 bg-gray-50 tails-selected-element"
@@ -41,3 +41,5 @@ export const QnA = () => {
         </section>
     );
 };
+
+export default QnA;

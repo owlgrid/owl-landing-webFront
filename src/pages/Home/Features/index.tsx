@@ -1,6 +1,5 @@
 import React from 'react';
-import { Feature } from './Feature';
-import { Text } from '../../../components/Text';
+import Text from '../../../components/Text';
 import {
     ArrowSwitchIcon,
     ChecklistIcon,
@@ -11,8 +10,9 @@ import {
     GraphIcon,
     PeopleIcon,
 } from 'gthibaud-icons-react';
+import Feature from './Feature';
 
-export const Features = () => {
+const Features = () => {
     const features = [
         {
             title: 'Database',
@@ -77,3 +77,5 @@ export const Features = () => {
         </section>
     );
 };
+
+export default Features;

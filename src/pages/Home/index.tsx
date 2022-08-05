@@ -1,14 +1,13 @@
 import * as React from 'react';
+import Contact from './Contact';
+import Features from './Features';
+import Footer from './Footer';
 
-import { Header } from './Header';
-import { Philosphy } from './Philosophy';
-import { Features } from './Features';
-import { Workflows } from './Workflows';
-import { QnA } from './QnA';
-import { Contact } from './Contact';
-import { Footer } from './Footer';
+import Header from './Header';
+import Philosphy from './Philosophy';
+import Workflows from './Workflows';
 
-export const Home = () => (
+const Home = () => (
     <>
         <Header />
         <Philosphy />
@@ -19,3 +18,5 @@ export const Home = () => (
         <Footer />
     </>
 );
+
+export default Home;

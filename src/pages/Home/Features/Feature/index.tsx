@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Text } from '../../../../components/Text';
+import Text from '../../../../components/Text';
 
 type FeatureProps = {
     title: string;
@@ -7,7 +7,7 @@ type FeatureProps = {
     icon: string;
 };
 
-export const Feature = ({ title, description, icon }: FeatureProps): ReactElement => {
+const Feature = ({ title, description, icon }: FeatureProps): ReactElement => {
     return (
         <div className="flex flex-col items-start justify-between p-6 space-y-4 overflow-hidden transition-shadow duration-200 bg-white bg-top bg-cover border border-gray-100 shadow-xl rounded-2xl group hover:shadow-2xl">
             <div className="flex items-center justify-center w-10 h-10 text-center bg-top bg-cover rounded-full bg-indigo-50">
@@ -33,3 +33,5 @@ export const Feature = ({ title, description, icon }: FeatureProps): ReactElemen
         </div>
     );
 };
+
+export default Feature;

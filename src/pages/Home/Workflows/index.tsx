@@ -1,8 +1,8 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { Text } from '../../../components/Text';
+import Text from '../../../components/Text';
 
-export const Workflows = () => {
+const Workflows = () => {
     return (
         <section className="w-full px-8 md:py-16 bg-white xl:px-0 tails-selected-element pt-0 pb-16 px-20 mx-auto max-w-7xl">
             <div className="flex flex-col items-start max-w-6xl mx-auto md:flex-row">
@@ -33,3 +33,5 @@ export const Workflows = () => {
         </section>
     );
 };
+
+export default Workflows;
