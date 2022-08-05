@@ -54,6 +54,8 @@ const generateClasses = (style: TextProps['style']): string => {
     switch (style) {
         case 'h1':
             return 'w-full mb-8 text-4xl font-bold text-black-800 sm:w-auto sm:text-center text-5xl lg:text-8xl md:mb-12';
+        case 'h2':
+            return 'w-full mx-auto text-4xl font-bold leading-none text-gray-800 sm:text-5xl md:text-5xl';
         case 'h3':
             return 'w-full text-2xl font-bold tracking-normal text-gray-800 sm:text-2xl md:text-4xl leading-none';
         case 'p':
@@ -61,7 +63,7 @@ const generateClasses = (style: TextProps['style']): string => {
         case 'headerLine1':
             return 'w-full mb-8 font-semibold text-indigo-500 text-xl sm:text-center sm:w-auto';
         case 'headerLine3':
-            return 'max-w-xl font-medium mb-8 text-left text-gray-500 text-xl sm:text-center md:mb-12';
+            return 'max-w-xl font-medium mb-8 text-left text-gray-500 text-xl sm:text-center md:mb-12 leading-normal';
         case 'link':
             return 'text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500';
         case 'anchor':
