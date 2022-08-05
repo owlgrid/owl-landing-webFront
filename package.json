@@ -1,13 +1,14 @@
 {
-    "name": "gatsby-starter-default",
+    "name": "owl-landing-webFront",
     "private": true,
-    "description": "A simple starter to get up and developing quickly with Gatsby",
-    "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "description": "Store and expose marketing information about the product.",
+    "version": "0.0.1",
+    "author": "Grégoire <gregoire.thibo@gmail.com>",
     "dependencies": {
         "gatsby": "^4.20.0",
         "gatsby-plugin-anchor-links": "^1.2.1",
         "gatsby-plugin-image": "^2.20.0",
+        "gatsby-plugin-manifest": "^4.20.0",
         "gatsby-plugin-scroll-reveal": "^0.0.7",
         "gatsby-plugin-sharp": "^4.20.0",
         "gatsby-source-filesystem": "^4.20.0",
@@ -39,7 +40,7 @@
     "keywords": [
         "gatsby"
     ],
-    "license": "0BSD",
+    "license": "SEE LICENSE IN LICENSE.md",
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
@@ -52,9 +53,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-    },
-    "bugs": {
-        "url": "https://github.com/gatsbyjs/gatsby/issues"
+        "url": "https://github.com/owlgrid/owl-landing-webFront"
     }
 }
