@@ -5,7 +5,7 @@ import { Text } from '../../../components/Text';
 
 export const HeaderBanner = () => {
     return (
-        <div className="relative pt-6 pb-6 z-20 flex items-center justify-center w-full overflow-hidden font-normal cursor-pointer bg-gradient-to-r from-indigo-500 via-blue-400 to-green-400 text-blue-50">
+        <div className="relative py-5 z-20 flex items-center justify-center w-full overflow-hidden font-normal cursor-pointer bg-gradient-to-r from-indigo-500 via-blue-400 to-green-400 text-blue-50">
             <div className="relative flex items-center justify-center w-full h-full mx-auto max-w-7xl gap-3">
                 <BellIcon size="small" fill="white" />
                 <AnchorLink to="/#contact">

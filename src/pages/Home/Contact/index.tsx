@@ -13,7 +13,7 @@ export const Contact = () => {
                     development!
                 </Text>
                 <a
-                    href="https://www.linkedin.com/company/owlgrid/"
+                    href="https://creas.tel/owlgrid-linkedin/"
                     target="_blank"
                     className="flex-shrink-0 px-10 py-5 text-2xl font-medium text-center text-white bg-blue-600 rounded-lg focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 focus:ring-offset-2 focus:outline-none"
                     data-primary="blue-600"

@@ -13,8 +13,8 @@ export const Philosphy = () => {
                 </div>
                 <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">
                     <Text style="p">
-                        The path of IT is to evolve towards ever more "high level" solutions, which means simpler and
-                        faster to use.
+                        The path of IT is to evolve towards ever more "high level" solutions, which means{' '}
+                        <b>more functional, simpler and faster</b> to use.
                         <br />
                         <br />
                         The way of doing cloud has evolved over the last few years: from a server in the garage to

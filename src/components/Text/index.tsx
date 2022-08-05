@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import parse, { Element } from 'html-react-parser';
-import { windowGlobal } from '../../utils/environment';
 
 type TextProps = {
     style:

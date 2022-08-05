@@ -52,12 +52,12 @@ export const Footer = () => {
                         <Text style="footerSectionTitle">Resources</Text>
                         <ul className="space-y-2 sm:space-y-4 text-md">
                             <li>
-                                <Link to="https://www.linkedin.com/company/owlgrid/" target="_blank">
+                                <Link to="https://creas.tel/owlgrid-linkedin/" target="_blank">
                                     <Text style="footerSectionLink">LinkedIn</Text>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="https://github.com/owlgrid" target="_blank">
+                                <Link to="https://creas.tel/owlgrid-github/" target="_blank">
                                     <Text style="footerSectionLink">Github</Text>
                                 </Link>
                             </li>

@@ -3,6 +3,7 @@ import { Text } from '../../../components/Text';
 import { HeaderBanner } from '../HeaderBanner';
 import styled from 'styled-components';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const SectionImageCover = styled((props) => <div {...props} />)`
     background-image: url(${({ src }) => src});
@@ -49,11 +50,16 @@ export const Header = () => {
                 <section className="relative w-full tails-selected-element min-h-screen flex flex-col">
                     <HeaderBanner />
                     <DivFullHeight className="z-20 px-10 mx-auto max-w-7xl h-full flex flex-col">
-                        {/* min-height: calc(100vh - 72px); */}
                         <div className="relative flex items-center justify-between py-4 mb-8 border-b md:py-8 md:mb-12 xl:mb-16">
                             <AnchorLink to="/">
-                                <a href="/" className="inline-flex items-center text-2xl font-bold text-black-800">
-                                    OwlGrid
+                                <a href="/" className="inline-flex items-center text-2xl font-bold text-grey-700">
+                                    <StaticImage
+                                        src="./../../../images/logo.png"
+                                        alt="Logo OwlGrid"
+                                        placeholder="blurred"
+                                        width={42}
+                                    />
+                                    &nbsp; OwlGrid
                                 </a>
                             </AnchorLink>
                             <nav className="hidden gap-12 ml-12 lg:flex">
