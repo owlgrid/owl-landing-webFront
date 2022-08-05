@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from '../../../components/Text';
 
 export const Philosphy = () => {
     return (
@@ -7,9 +8,9 @@ export const Philosphy = () => {
             id="philosophy"
         >
             <div className="flex flex-col items-start max-w-6xl mx-auto md:flex-row">
-                <h3 className="w-full text-2xl font-bold tracking-normal text-gray-800 sm:text-2xl md:text-4xl md:pr-10 lg:pr-16 xl:pr-20 leading-none md:-mt-2 md:w-1/2">
-                    A better way of doing cloud.
-                </h3>
+                <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">
+                    <Text style="h3">A better way of doing cloud.</Text>
+                </div>
                 <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">
                     <p className="col-span-6 text-base font-normal text-gray-700 lg:leading-8 xl:leading-8 md:text-xl">
                         The path of IT is to evolve towards ever more "high level" solutions, which means simpler and
