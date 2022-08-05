@@ -55,9 +55,9 @@ export const Header = () => {
                             </AnchorLink>
                             <nav className="hidden gap-12 ml-12 lg:flex">
                                 <AnchorLink to="/">
-                                    <a href="/" className="text-lg font-semibold text-indigo-500">
+                                    <Text style="anchorActive" url="#">
                                         Home
-                                    </a>
+                                    </Text>
                                 </AnchorLink>
                                 <AnchorLink to="/#philosophy">
                                     <Text style="anchor" url="#philosophy">

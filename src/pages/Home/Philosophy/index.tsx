@@ -12,7 +12,7 @@ export const Philosphy = () => {
                     <Text style="h3">A better way of doing cloud.</Text>
                 </div>
                 <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">
-                    <p className="col-span-6 text-base font-normal text-gray-700 lg:leading-8 xl:leading-8 md:text-xl">
+                    <Text style="p">
                         The path of IT is to evolve towards ever more "high level" solutions, which means simpler and
                         faster to use.
                         <br />
@@ -21,10 +21,9 @@ export const Philosphy = () => {
                         delegated management, to code as a service, etc.
                         <br />
                         <br />
-                        OwlGrid brings the new evolution with a new approach to the cloud, based on a better developer
-                        experience. We have masked the complexity of resource management with highly functional
-                        high-level services.
-                    </p>
+                        OwlGrid brings the next cloud evolution with a simplier approach, bringing a better developer
+                        experience. OwlGrid platform features a workflow tool that perform actions on resources.
+                    </Text>
                 </div>
             </div>
         </section>

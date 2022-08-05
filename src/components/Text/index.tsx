@@ -17,10 +17,14 @@ type TextProps = {
         | 'headerLine3'
         | 'link'
         | 'bannerMessage'
-        | 'anchor';
+        | 'anchor'
+        | 'anchorActive'
+        | 'cardTitle'
+        | 'cardDescription';
     align?: 'left' | 'center' | 'right';
     children: ReactElement | string;
     url?: string;
+    customStyle?: string;
 };
 
 const generateTextAlign = (align: TextProps['align']): string => 'text-' + (align ? align : 'left');
@@ -36,6 +40,10 @@ const generateHtmlTag = (style: TextProps['style']): string => {
         case 'link':
             return 'a';
         case 'anchor':
+            return 'p';
+        case 'cardTitle':
+            return 'p';
+        case 'cardDescription':
             return 'p';
         default:
             return style;
@@ -58,8 +66,14 @@ const generateClasses = (style: TextProps['style']): string => {
             return 'text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500';
         case 'anchor':
             return 'text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500';
+        case 'anchorActive':
+            return 'text-lg font-semibold text-indigo-500';
         case 'bannerMessage':
             return 'white sm:text-s';
+        case 'cardTitle':
+            return 'font-bold text-gray-700 text-xl leading-normal';
+        case 'cardDescription':
+            return 'text-md leading-5 text-gray-500 leading-normal';
         default:
             return style;
     }
@@ -79,17 +93,18 @@ const generateClass = (
     align: TextProps['align'],
     children: TextProps['children'],
     url: TextProps['url'],
+    customStyle: TextProps['customStyle'],
 ) =>
     parser(
         `<${generateHtmlTag(style)} ` +
-            `className="${generateClasses(style)} ` +
-            `${generateTextAlign(align)}" ` +
-            `${url && ' href="' + url + '"'}>` +
-            `<br class="children">` +
-            `</${generateHtmlTag(style)}>`,
+            `className="${generateClasses(style)} ${customStyle || ''}` +
+            ` ${generateTextAlign(align)}" ` +
+            ` ${url && ' href="' + url + '"'}>` +
+            ` <br class="children">` +
+            ` </${generateHtmlTag(style)}>`,
         children,
     );
 
-export const Text = ({ style, align, children, url }: TextProps): ReactElement => {
-    return <>{generateClass(style, align, children, url)}</>;
+export const Text = ({ style, align, children, url, customStyle }: TextProps): ReactElement => {
+    return <>{generateClass(style, align, children, url, customStyle)}</>;
 };
