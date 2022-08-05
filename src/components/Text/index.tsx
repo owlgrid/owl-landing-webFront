@@ -19,6 +19,9 @@ type TextProps = {
         | 'bannerMessage'
         | 'anchor'
         | 'anchorActive'
+        | 'footerSectionTitle'
+        | 'footerSectionLink'
+        | 'footerBottomLink'
         | 'cardTitle'
         | 'cardDescription';
     align?: 'left' | 'center' | 'right';
@@ -76,6 +79,12 @@ const generateClasses = (style: TextProps['style']): string => {
             return 'font-bold text-gray-700 text-xl leading-normal';
         case 'cardDescription':
             return 'text-md leading-5 text-gray-500 leading-normal';
+        case 'footerSectionTitle':
+            return 'text-xs tracking-wide text-gray-500 uppercase font-bold';
+        case 'footerSectionLink':
+            return 'hover:text-gray-500 text-gray-900 transition-colors duration-200 text-xl';
+        case 'footerBottomLink':
+            return 'text-sm sm:text-base text-black transition-colors duration-300 font-semibold';
         default:
             return style;
     }

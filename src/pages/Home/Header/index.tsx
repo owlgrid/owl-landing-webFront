@@ -42,7 +42,10 @@ export const Header = () => {
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={metaDescription} />
 
-            <SectionImageCover src={'http://devdojo.com.s3.us-east-1.amazonaws.com/tails/images/mesh-bg-blue.svg'}>
+            <SectionImageCover
+                src={'http://devdojo.com.s3.us-east-1.amazonaws.com/tails/images/mesh-bg-blue.svg'}
+                id="top"
+            >
                 <section className="relative w-full tails-selected-element min-h-screen flex flex-col">
                     <HeaderBanner />
                     <DivFullHeight className="z-20 px-10 mx-auto max-w-7xl h-full flex flex-col">
