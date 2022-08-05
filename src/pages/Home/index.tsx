@@ -14,7 +14,7 @@ export const Home = () => (
         <Philosphy />
         <Workflows />
         <Features />
-        <QnA />
+        {/* <QnA /> */}
         <Contact />
         <Footer />
     </>
