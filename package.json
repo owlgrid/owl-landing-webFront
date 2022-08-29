@@ -3,7 +3,7 @@
     "private": true,
     "description": "Store and expose marketing information about the product.",
     "version": "0.0.1",
-    "author": "Grégoire <gregoire.thibo@gmail.com>",
+    "author": "Grégoire Thibaud <gregoire@creastel.com>",
     "dependencies": {
         "gatsby": "^4.20.0",
         "gatsby-plugin-anchor-links": "^1.2.1",
