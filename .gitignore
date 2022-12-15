@@ -64,6 +64,10 @@ public
 # Mac files
 .DS_Store
 
+# Build
+lib
+build
+
 # Yarn
 yarn-error.log
 .pnp/
