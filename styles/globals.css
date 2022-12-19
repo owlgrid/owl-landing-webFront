@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base{
+    html, body{
+        @apply scroll-smooth;
+    }
     h1, h2, h3, p, a, span{
         @apply font-sans;
     }

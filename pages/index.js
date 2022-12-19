@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 flex gap-x-4 sm:justify-center">
-              <Button href="/" primary>
+              <Button href="#features" primary>
                 Learn more
               </Button>
               <Button href="/" secondary>
@@ -108,7 +108,7 @@ export default function Home() {
       </div>
 
       <main className='overflow-x-hidden'>
-        <section className='wrapper py-24 space-y-24'>
+        <section className='wrapper py-24 space-y-24' id="features">
           <Feature
             heading={<>Implement app backends in <span className='text-blue'>record</span> time.</>}
             description={<>OwlGrid provides a catalog of integrated and ready-to-use resources to set up SaaS and mobile application backends in record time.<br /><br />

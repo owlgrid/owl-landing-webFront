@@ -13,7 +13,7 @@ export default function CTA(props){
               LinkedIn — OwlGrid
             </Button>
           </div>
-          <p className='text-center'>Or contact us on <a href="mailto:hello@creastel.com" className='hover:underline'>hello@creastel.com</a>.</p>
+          <p className='text-center'>Or contact us on <a href="mailto:hello@owlgrid.com" className='hover:underline'>hello@owlgrid.com</a>.</p>
         </section>
     );
 }

@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const navigation = [
-    { name: 'Value', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'App builders', href: '#' },
-    { name: 'About', href: '#' },
+    { name: 'Value', href: '#features' },
+    { name: 'Features', href: '#features' },
+    { name: 'App builders', href: '#features' },
+    { name: 'About', href: '#features' },
 ]
 const contact = [
     { name: 'Contact', href: '#' },
@@ -24,7 +24,7 @@ export default function Footer(props){
                     <ul className="flex flex-col gap-2">
                         {navigation.map((elem, i)=>(
                             <li key={i} className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 ">
-                                <Link href={elem.href}>{elem.name}</Link>
+                                <Link href={elem.href} scroll={false}>{elem.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -50,7 +50,7 @@ export default function Footer(props){
                     </ul>
                 </div>
             </div>
-            <div className="flex flex-col gap-y-4 justify-between mt-10 pt-10 sm:pt-8 pb-4 border-t lg:flex-row bg-top border-gray-800">
+            <div className="flex flex-col gap-y-4features justify-between mt-10 pt-10 sm:pt-8 pb-4 border-t lg:flex-row bg-top border-gray-800">
                 <ul className="flex flex-col space-y-1 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                     <li className="text-gray-600 hover:text-gray-600/60 transition duration-150">
                         <Link href="https://legals.creastel.com" target="_blank">

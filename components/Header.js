@@ -6,10 +6,10 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Value', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'App builders', href: '#' },
-  { name: 'About', href: '#' },
+  { name: 'Value', href: '#features' },
+  { name: 'Features', href: '#features' },
+  { name: 'App builders', href: '#features' },
+  { name: 'About', href: '#features' },
 ]
 
 export default function Header() {
@@ -40,7 +40,7 @@ export default function Header() {
 
                 <div className="hidden lg:flex lg:justify-center lg:gap-x-12">
                     {navigation.map((item) => (
-                    <Link key={item.name} href={item.href} className="font-semibold text-base text-gray-500 hover:text-purple transition duration-150">
+                    <Link key={item.name} href={item.href} scroll={false} className="font-semibold text-base text-gray-500 hover:text-purple transition duration-150">
                         {item.name}
                     </Link>
                     ))}
