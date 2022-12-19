@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import Annoucement from '../components/Announcement'
+import Button from '../components/Button'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -14,9 +14,67 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      
+      <div className="relative overflow-hidden h-screen">
+        <Annoucement />
+        <Header />
+        <div className='container mx-auto max-w-5xl px-6 py-3'>
+          <div className='flex flex-col gap-2'>
+            <div className='flex gap-2 sm:justify-center'>
+              <span className='text-lg sm:text-xl leading-8 font-bold flex justify-center text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple'>
+                Unleash your app superpowers
+              </span>
+              <span>✨</span>
+            </div>
+
+            <h1 className="text-primary sm:text-center sm:max-w-md sm:mx-auto lg:max-w-none">
+              Create cloud applications in a minute.
+            </h1>
+
+            <p className="mt-6 mb-3 sm:text-center sm:max-w-md sm:mx-auto">
+              OwlGrid allows product and IT teams to quickly implement robust apps backends.
+            </p>
+          </div>
+
+          <div className="mt-8 flex gap-x-4 sm:justify-center">
+              <Button href="/" primary>
+                Learn more
+              </Button>
+              <Button href="/" secondary>
+                Stay informed
+              </Button>
+              
+            </div>
+        </div>
+
+        <div className="absolute bottom-0 -z-10 transform-gpu overflow-hidden">
+          <svg className="w-screen" width="100%" height="100%" viewBox="0 0 1920 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_101_38)">
+              <path d="M1594.61 343.617C953.335 595.574 461.953 450.677 313.305 343.617C269.593 324.006 164.311 233.697 -24.0278 203.241C-259.451 165.171 -286.073 581.208 -77.5 675C131.073 768.792 1463.96 822.953 1825 739.5C2320.5 728.5 2396.23 28.6725 1594.61 343.617Z" fill="url(#paint0_linear_101_38)"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_101_38" x="-418.615" y="0.786743" width="2816.58" height="979.972" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_101_38"/>
+            </filter>
+            <linearGradient id="paint0_linear_101_38" x1="1817.5" y1="491" x2="1536.13" y2="-317.432" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#945FFE"/>
+              <stop offset="1" stopColor="#0079FF"/>
+            </linearGradient>
+            </defs>
+          </svg>
+
+
+        </div>
+      </div>
+
+      <main>
         
+
+        <div className='h-72 w-full'></div>
       </main>
+
     </>
   )
 }

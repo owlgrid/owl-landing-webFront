@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h1, h2, h3, p, a, span{
+        @apply font-sans;
+    }
+    h1{
+        @apply text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl;
+    }
+    p{
+        @apply text-lg sm:text-xl leading-8 text-gray-500;
+    }
+}
+
+@layer components{
+    .primary-gradient{
+        background: linear-gradient(300.93deg, #945FFE 32.83%, #0079FF 93.45%);
+    }
+
+    .btn{
+        @apply rounded-md px-6 py-3 text-sm font-semibold leading-6 transition duration-150 shadow-sm hover:shadow-md;
+    }
+    .btn-primary-gradient{
+        background: linear-gradient(316.31deg, #945FFE 10.57%, #0079FF 93.61%);
+    }
+}
