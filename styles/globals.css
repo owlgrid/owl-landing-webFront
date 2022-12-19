@@ -9,20 +9,31 @@
     h1{
         @apply text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl;
     }
+    h2{
+        @apply text-3xl md:text-4xl font-bold;
+    }
+    h3{
+        @apply text-xl font-bold;
+    }
     p{
-        @apply text-lg sm:text-xl leading-8 text-gray-500;
+        @apply text-lg sm:text-xl leading-8 text-gray-600;
     }
 }
 
 @layer components{
+    .wrapper{
+        @apply overflow-x-hidden container mx-auto max-w-6xl px-6 py-3;
+    }
+
     .primary-gradient{
         background: linear-gradient(300.93deg, #945FFE 32.83%, #0079FF 93.45%);
     }
 
     .btn{
-        @apply rounded-md px-6 py-3 text-sm font-semibold leading-6 transition duration-150 shadow-sm hover:shadow-md;
+        @apply flex items-center px-6 py-3 text-sm font-semibold gap-2 rounded-md leading-6 transition duration-150 shadow-sm hover:shadow-md;
     }
     .btn-primary-gradient{
         background: linear-gradient(316.31deg, #945FFE 10.57%, #0079FF 93.61%);
     }
+    
 }
