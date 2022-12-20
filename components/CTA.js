@@ -5,7 +5,7 @@ export default function CTA(props) {
         <section className="wrapper py-24 max-w-5xl">
             <div className="flex flex-col items-center justify-center gap-4">
                 <h2 className="text-primary text-center">Stay in touch!</h2>
-                <p className="sm:text-center sm:max-w-2xl sm:mx-auto">
+                <p className="subtitle sm:text-center sm:max-w-2xl sm:mx-auto">
                     Are you interested in OwlGrid? Follow our journey on LinkedIn to stay informed of the product
                     development!
                 </p>
@@ -16,7 +16,7 @@ export default function CTA(props) {
                     LinkedIn — OwlGrid
                 </Button>
             </div>
-            <p className="text-center">
+            <p className="subtitle text-center">
                 Or contact us on{' '}
                 <a href="mailto:hello@owlgrid.com" className="hover:underline">
                     hello@owlgrid.com

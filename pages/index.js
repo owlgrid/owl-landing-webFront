@@ -237,7 +237,7 @@ export default function Home() {
                 <section className="wrapper py-24">
                     <div className="flex flex-col items-center justify-center gap-4">
                         <h2 className="text-primary text-center">Open-source framework 🔨</h2>
-                        <p className="text-[#434B57] text-center">Based on well-proven open-source technologies.</p>
+                        <p className="subtitle text-center">Based on well-proven open-source technologies.</p>
                     </div>
                     <Image
                         src="/framework.png"
