@@ -1,30 +1,35 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const navigation = [
     { name: 'Value', href: '#features' },
     { name: 'Features', href: '#features' },
     { name: 'App builders', href: '#features' },
     { name: 'About', href: '#features' },
-]
+];
 const contact = [
     { name: 'Contact', href: '#' },
-    { name: 'Email', href: 'mailto:hello@creastel.com' }
-]
+    { name: 'Email', href: 'mailto:hello@creastel.com' },
+];
 const resources = [
     { name: 'LinkedIn', href: '#' },
-    { name: 'Github', href: '#' }
-]
+    { name: 'Github', href: '#' },
+];
 
-export default function Footer(props){
-    return(
+export default function Footer(props) {
+    return (
         <footer className="wrapper py-24">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-10">
                 <div className="space-y-4">
                     <span className="text-sm text-gray-600">HOME</span>
                     <ul className="flex flex-col gap-2">
-                        {navigation.map((elem, i)=>(
-                            <li key={i} className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 ">
-                                <Link href={elem.href} scroll={false}>{elem.name}</Link>
+                        {navigation.map((elem, i) => (
+                            <li
+                                key={i}
+                                className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 "
+                            >
+                                <Link href={elem.href} scroll={false}>
+                                    {elem.name}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -32,8 +37,11 @@ export default function Footer(props){
                 <div className="space-y-4">
                     <span className="text-sm text-gray-600">CONTACT</span>
                     <ul className="flex flex-col gap-2">
-                        {contact.map((elem, i)=>(
-                            <li key={i} className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 ">
+                        {contact.map((elem, i) => (
+                            <li
+                                key={i}
+                                className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 "
+                            >
                                 <Link href={elem.href}>{elem.name}</Link>
                             </li>
                         ))}
@@ -42,8 +50,11 @@ export default function Footer(props){
                 <div className="space-y-4">
                     <span className="text-sm text-gray-600">HOME</span>
                     <ul className="flex flex-col gap-2">
-                        {resources.map((elem, i)=>(
-                            <li key={i} className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 ">
+                        {resources.map((elem, i) => (
+                            <li
+                                key={i}
+                                className="text-primary text-lg font-semibold hover:text-primary/60 transition duration-150 "
+                            >
                                 <Link href={elem.href}>{elem.name}</Link>
                             </li>
                         ))}
