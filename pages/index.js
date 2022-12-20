@@ -129,7 +129,7 @@ export default function Home() {
             </div>
 
             <main className="overflow-x-hidden">
-                <section className="wrapper py-24 space-y-24" id="features">
+                <section className="wrapper py-24 space-y-24" id="value">
                     <Feature
                         heading={
                             <>
@@ -187,7 +187,7 @@ export default function Home() {
           </div> */}
                 </section>
 
-                <section className="relative py-12 bg-gradient bg-gradient-to-br from-blue to-purple sm:bg-none">
+                <section className="relative py-12 bg-gradient bg-gradient-to-br from-blue to-purple sm:bg-none" id="features">
                     <Image
                         src="/resources.png"
                         alt="Background image"
@@ -248,15 +248,15 @@ export default function Home() {
                     />
                 </section>
 
-                <section className="relative md:h-screen">
+                <section className="relative md:h-screen" id="app-builders">
                     <Image
                         src="/person.png"
                         alt="Background image"
                         width={1920}
                         height={1038}
-                        className="block aspect-video md:absolute -z-10 inset-0 sm:h-full w-full bg-cover bg-center"
+                        className="block aspect-video md:absolute -z-10 inset-0 sm:h-full w-full object-cover bg-center"
                     />
-                    <div className="wrapper py-12 sm:py-24">
+                    <div className="wrapper py-12 sm:py-24 flex md:items-center md:h-screen">
                         <div className="space-y-6 sm:space-y-12">
                             <h2 className="text-primary md:text-white">Hello App Builders 👋🏻</h2>
                             <div className="max-w-prose md:max-w-md space-y-4">

@@ -4,15 +4,15 @@ const navigation = [
     { name: 'Value', href: '#value' },
     { name: 'Features', href: '#features' },
     { name: 'App builders', href: '#app-builders' },
-    { name: 'About', href: '#about' },
+    { name: 'About', href: '#contact' },
 ];
 const contact = [
-    { name: 'Contact', href: '#' },
+    { name: 'Contact', href: '#contact' },
     { name: 'Email', href: 'mailto:hello@creastel.com' },
 ];
 const resources = [
-    { name: 'LinkedIn', href: '#' },
-    { name: 'Github', href: '#' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/82522578' },
+    { name: 'Github', href: 'http://github.com/owlgrid' },
 ];
 
 export default function Footer(props) {
@@ -55,7 +55,7 @@ export default function Footer(props) {
                                 key={i}
                                 className="footer-section-link"
                             >
-                                <Link href={elem.href}>{elem.name}</Link>
+                                <Link href={elem.href} target="_blank">{elem.name}</Link>
                             </li>
                         ))}
                     </ul>
