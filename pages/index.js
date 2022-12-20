@@ -68,7 +68,7 @@ export default function Home() {
                             Create cloud applications in a minute.
                         </h1>
 
-                        <p className="mt-6 mb-3 sm:text-center sm:max-w-md sm:mx-auto">
+                        <p className="subtitle mt-6 mb-3 sm:text-center sm:max-w-md sm:mx-auto">
                             OwlGrid allows product and IT teams to quickly implement robust apps backends.
                         </p>
                     </div>
@@ -199,7 +199,7 @@ export default function Home() {
                     <div className="wrapper">
                         <div className="flex flex-col gap-4 items-center my-3">
                             <h2 className="text-white">Ready to use resources:</h2>
-                            <p className="text-white">Everything you need to create a modern SaaS or mobile app.</p>
+                            <p className="subtitle-white">Everything you need to create a modern SaaS or mobile app.</p>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-12">
@@ -215,7 +215,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <p className="text-white text-center my-3 lg:my-6">+ more resources on the way 🤫</p>
+                    <p className="subtitle-white text-center my-3 lg:my-6">+ more resources on the way 🤫</p>
 
                     {/* <div className='flex justify-center my-6'>
               <Button href="/" tertiary>
