@@ -12,7 +12,7 @@ export default function CTA(props) {
             </div>
 
             <div className="flex justify-center my-12">
-                <Button href="/" primary xl>
+                <Button href="https://www.linkedin.com/company/owlgrid/" target="_blank" primary xl>
                     LinkedIn — OwlGrid
                 </Button>
             </div>

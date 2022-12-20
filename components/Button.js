@@ -18,6 +18,7 @@ export default function Button(props) {
         <Link
             href={props.href}
             scroll={false}
+            target={props.target}
             className={`flex items-center gap-2 rounded-md leading-6 transition duration-150 shadow-sm hover:shadow-md ${btnVariant} ${btnSize}`}
         >
             {props.children}

@@ -11,7 +11,7 @@ const contact = [
     { name: 'Email', href: 'mailto:hello@creastel.com' },
 ];
 const resources = [
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/82522578' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/owlgrid/' },
     { name: 'Github', href: 'http://github.com/owlgrid' },
 ];
 
