@@ -52,34 +52,36 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <div className="relative overflow-hidden h-screen">
+            <div className="relative overflow-hidden min-h-screen md:flex md:flex-col">
                 <Annoucement />
                 <Header />
-                <div className="container mx-auto max-w-5xl px-6 py-12 sm:py-3">
-                    <div className="flex flex-col gap-2">
-                        <div className="flex gap-2 sm:justify-center">
-                            <span className="text-lg sm:text-xl leading-8 font-bold flex justify-center text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple">
-                                Unleash your app superpowers
-                            </span>
-                            <span>✨</span>
+                <div className="flex flex-col items-start sm:items-center mt-auto mb-auto pb-12">
+                    <div className="container mx-auto max-w-5xl px-6 py-12 sm:py-3">
+                        <div className="flex flex-col gap-2">
+                            <div className="flex gap-2 sm:justify-center">
+                                <span className="text-lg sm:text-xl leading-8 font-bold flex justify-center text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple">
+                                    Unleash your app superpowers
+                                </span>
+                                <span>✨</span>
+                            </div>
+
+                            <h1 className="text-primary sm:text-center sm:max-w-md sm:mx-auto lg:max-w-none">
+                                Create cloud applications in a minute.
+                            </h1>
+
+                            <p className="subtitle mt-6 mb-3 sm:text-center sm:max-w-md sm:mx-auto">
+                                OwlGrid allows product and IT teams to quickly implement robust apps backends.
+                            </p>
                         </div>
 
-                        <h1 className="text-primary sm:text-center sm:max-w-md sm:mx-auto lg:max-w-none">
-                            Create cloud applications in a minute.
-                        </h1>
-
-                        <p className="subtitle mt-6 mb-3 sm:text-center sm:max-w-md sm:mx-auto">
-                            OwlGrid allows product and IT teams to quickly implement robust apps backends.
-                        </p>
-                    </div>
-
-                    <div className="mt-8 flex gap-x-4 sm:justify-center">
-                        <Button href="#features" primary>
-                            Learn more
-                        </Button>
-                        <Button href="/" secondary>
-                            Stay informed
-                        </Button>
+                        <div className="mt-8 flex gap-x-4 sm:justify-center">
+                            <Button href="#features" primary>
+                                Learn more
+                            </Button>
+                            <Button href="/" secondary>
+                                Stay informed
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
