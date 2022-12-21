@@ -3,7 +3,7 @@ import MuxPlayer from "@mux/mux-player-react";
 export default function Feature(props) {
     return (
         <div
-            className={`flex gap-4 md:gap-8 lg:gap-16 items-center flex-col-reverse ${props.reversed ? 'md:flex-row-reverse' : 'md:flex-row'
+            className={`flex gap-8 lg:gap-16 items-center flex-col ${props.reversed ? 'md:flex-row-reverse' : 'md:flex-row'
                 }`}
         >
             <div className="flex flex-col gap-4 md:gap-8 md:basis-2/3 lg:basis-1/2">
@@ -11,7 +11,7 @@ export default function Feature(props) {
                 <p className="">{props.description}</p>
             </div>
 
-            <div className='video-wrapper'>
+            <div className='video-wrapper shrink'>
                 <MuxPlayer
                     streamType="on-demand"
                     playbackId="901nimvnfEhWgfR4ca45EmPuE63F007A8lM1JCZVVkfSc"

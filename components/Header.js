@@ -17,52 +17,56 @@ export default function Header() {
 
     return (
         <header className="">
-            <div className="px-6 py-3 max-w-6xl mx-auto">
-                <nav
-                    className="flex items-center justify-between lg:justify-center gap-4 lg:gap-x-28"
-                    aria-label="Global"
-                >
-                    <Link href="/" className="flex justify-center items-center gap-2" aria-label="Global">
-                        <span className="sr-only">OwlGrid</span>
-                        <Image className="h-12" src="/logo_w_text.svg" alt="OwlGrid logo" width={164} height={54} />
-                    </Link>
-
-                    <div className="flex order-last lg:hidden">
-                        <button
-                            type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-lg p-2.5 text-gray-700"
-                            onClick={() => setMobileMenuOpen(true)}
-                        >
-                            <span className="sr-only">Open main menu</span>
-                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                        </button>
-                    </div>
-
-                    <div className="hidden lg:flex lg:justify-center lg:gap-x-12">
-                        {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                scroll={false}
-                                className="font-semibold text-base text-gray-500 hover:text-purple transition duration-150"
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
-                    </div>
-
-                    <div className="hidden sm:flex flex-1 justify-end lg:flex-none lg:justify-start">
-                        <Link
-                            href="/"
-                            className="btn text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900 transition duration-150 shadow-sm"
-                        >
-                            Stay in touch
+            <div className="px-6 py-3 max-w-6xl mx-auto lg:flex lg:flex-col lg:items-center">
+                <div className=''>
+                    <nav
+                        className="inline-flex w-full items-center justify-between lg:justify-between gap-4 lg:gap-x-28"
+                        aria-label="Global"
+                    >
+                        <Link href="/" className="flex justify-center items-center gap-2" aria-label="Global">
+                            <span className="sr-only">OwlGrid</span>
+                            <Image className="" src="/logo_w_text.svg" alt="OwlGrid logo" width={164} height={54} />
                         </Link>
-                    </div>
-                </nav>
 
-                {/* divider */}
-                <div className="hidden lg:block h-[1px] w-full bg-gray-300 my-3 xl:mb-3"></div>
+                        <div className="flex order-last lg:hidden">
+                            <button
+                                type="button"
+                                className="-m-2.5 inline-flex items-center justify-center rounded-lg p-2.5 text-gray-700"
+                                onClick={() => setMobileMenuOpen(true)}
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                            </button>
+                        </div>
+
+                        <div className="hidden lg:flex lg:justify-center lg:gap-x-12">
+                            {navigation.map((item) => (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    scroll={false}
+                                    className="font-semibold text-base text-gray-500 hover:text-purple transition duration-150"
+                                >
+                                    {item.name}
+                                </Link>
+                            ))}
+                        </div>
+
+                        <div className="hidden sm:flex flex-1 justify-end lg:flex-none lg:justify-start">
+                            <Link
+                                href="/"
+                                className="btn text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900 transition duration-150 shadow-sm"
+                            >
+                                Stay in touch
+                            </Link>
+                        </div>
+                        {/* divider */}
+                    </nav>
+                    {/* bottom divider */}
+                    <div className="hidden lg:block h-[1px] w-full bg-gray-300 my-3 xl:mb-3"></div>
+                </div>
+
+                
 
                 <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                     <Dialog.Panel

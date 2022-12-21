@@ -9,6 +9,7 @@ import Button from '../components/Button';
 import Header from '../components/Header';
 import Feature from '../components/Feature';
 import Card from '../components/Card';
+import FrameworkDiagram from '../components/FrameworkDiagram';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 
@@ -191,7 +192,7 @@ export default function Home() {
 
                 <section className="relative py-12 bg-gradient bg-gradient-to-br from-blue to-purple sm:bg-none" id="features">
                     <Image
-                        src="/resources.png"
+                        src="/resources_bg.svg"
                         alt="Background image"
                         width={1920}
                         height={768}
@@ -220,26 +221,30 @@ export default function Home() {
                     <p className="subtitle-white text-center my-3 lg:my-6">+ more resources on the way 🤫</p>
 
                     {/* <div className='flex justify-center my-6'>
-              <Button href="/" tertiary>
-                ⚡️ <span className='text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple'>Learn more about our features </span>
+                      <Button href="/" tertiary>
+                        ⚡️ <span className='text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple'>Learn more about our features </span>
 
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.8225 18.8867C12.1183 18.8867 12.4036 18.7705 12.6572 18.5275L19.6196 11.565C19.8627 11.3325 20 11.0156 20 10.6986C20 10.3711 19.8627 10.0541 19.6196 9.82171L12.6783 2.88035C12.4036 2.61622 12.1183 2.5 11.8225 2.5C11.1463 2.5 10.6603 2.97544 10.6603 3.61992C10.6603 3.958 10.7977 4.24326 11.009 4.45457L13.3862 6.86344L16.4501 9.66323L13.9989 9.51532H1.19387C0.486001 9.51532 0 10.0013 0 10.6986C0 11.3854 0.486001 11.8714 1.19387 11.8714H13.9989L16.4501 11.7235L13.3862 14.5232L11.009 16.9321C10.7977 17.1434 10.6603 17.4287 10.6603 17.7668C10.6603 18.4113 11.1463 18.8867 11.8225 18.8867Z" fill="url(#paint0_linear_247_38)"/>
-                  <defs>
-                  <linearGradient id="paint0_linear_247_38" x1="17.62" y1="17.3627" x2="4.70615" y2="0.862825" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#945FFE"/>
-                    <stop offset="1" stopColor="#0079FF"/>
-                  </linearGradient>
-                  </defs>
-                </svg>
-              </Button>
-            </div> */}
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.8225 18.8867C12.1183 18.8867 12.4036 18.7705 12.6572 18.5275L19.6196 11.565C19.8627 11.3325 20 11.0156 20 10.6986C20 10.3711 19.8627 10.0541 19.6196 9.82171L12.6783 2.88035C12.4036 2.61622 12.1183 2.5 11.8225 2.5C11.1463 2.5 10.6603 2.97544 10.6603 3.61992C10.6603 3.958 10.7977 4.24326 11.009 4.45457L13.3862 6.86344L16.4501 9.66323L13.9989 9.51532H1.19387C0.486001 9.51532 0 10.0013 0 10.6986C0 11.3854 0.486001 11.8714 1.19387 11.8714H13.9989L16.4501 11.7235L13.3862 14.5232L11.009 16.9321C10.7977 17.1434 10.6603 17.4287 10.6603 17.7668C10.6603 18.4113 11.1463 18.8867 11.8225 18.8867Z" fill="url(#paint0_linear_247_38)"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_247_38" x1="17.62" y1="17.3627" x2="4.70615" y2="0.862825" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#945FFE"/>
+                            <stop offset="1" stopColor="#0079FF"/>
+                          </linearGradient>
+                          </defs>
+                        </svg>
+                      </Button>
+                    </div> */}
                 </section>
 
                 <section className="wrapper py-24">
                     <div className="flex flex-col items-center justify-center gap-4">
                         <h2 className="text-primary text-center">Open-source framework 🔨</h2>
                         <p className="subtitle text-center">Based on well-proven open-source technologies.</p>
+                    </div>
+
+                    <div className='my-12'>
+                      <FrameworkDiagram />
                     </div>
                     <Image
                         src="/framework.png"

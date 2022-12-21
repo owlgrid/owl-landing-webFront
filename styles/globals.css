@@ -25,7 +25,7 @@
         @apply text-xl font-bold;
     }
     p {
-        @apply text-lg sm:text-xl leading-8 text-gray-600;
+        @apply text-lg sm:text-xl leading-normal text-gray-600;
     }
 }
 

@@ -23,6 +23,8 @@
     },
     "devDependencies": {
         "@owlgrid-dev/prettier-config": "^0.0.1",
+        "@types/node": "18.11.17",
+        "@types/react": "18.0.26",
         "autoprefixer": "^10.4.13",
         "postcss": "^8.4.20",
         "prettier": "^2.8.1",
