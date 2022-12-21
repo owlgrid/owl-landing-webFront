@@ -24,8 +24,7 @@ export default function Header() {
                 >
                     <Link href="/" className="flex justify-center items-center gap-2" aria-label="Global">
                         <span className="sr-only">OwlGrid</span>
-                        <Image className="h-12" src="/logo.svg" alt="OwlGrid logo" width={54} height={54} />
-                        <span className="font-bold text-xl tracking-wide text-primary">OwlGrid</span>
+                        <Image className="h-12" src="/logo_w_text.svg" alt="OwlGrid logo" width={164} height={54} />
                     </Link>
 
                     <div className="flex order-last lg:hidden">
