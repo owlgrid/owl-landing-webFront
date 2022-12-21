@@ -73,3 +73,7 @@
         @apply font-medium text-gray-700 hover:text-gray-400 transition duration-100;
     }
 }
+
+.video-wrapper * {
+    background-color: white !important;
+}
