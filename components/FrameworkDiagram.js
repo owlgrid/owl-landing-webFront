@@ -64,27 +64,27 @@ export default function FrameworkDiagram(props){
 
                 <div className="flex flex-col gap-4 justify-center col-span-8 lg:col-span-6">
                     <div className="grid grid-cols-5 gap-4 items-center">
-                        <p className="col-span-5 md:col-span-1 text-base text-white font-light">OwlGrid open-source framework</p>
+                        <p className="col-span-5 md:col-span-1 text-sm text-white font-light">OwlGrid open-source framework</p>
                         <div className="flex col-span-5 md:col-span-4 flex-1 bg-white rounded-lg py-4">
                             <div className="px-8 flex flex-col md:flex-row gap-8 w-full">
                                 <div className="flex flex-col gap-4 items-center">
-                                    <span className="font-medium text-primary">Resources</span>
+                                    <span className="font-semibold text-primary">Resources</span>
                                     <div className="grid grid-cols-4 gap-10">
                                         {features.map((elem, i)=>(
                                             <div key={i} className="col-span-2 md:col-span-1 flex flex-col items-center gap-2">
                                                 <Image src={elem.src} alt={elem.alt} width={52} height={52} className="h-12 w-12" />
-                                                <span>{elem.title}</span>
+                                                <span className="text-sm font-medium text-primary">{elem.title}</span>
                                             </div>
                                         ))}
                                         <div className="col-span-2 md:col-span-1 flex flex-col items-center gap-2">
                                             <EllipsisHorizontalIcon className="h-12 w-12 text-primary" />
-                                            <span>& more</span>
+                                            <span className="text-sm font-medium text-primary">& more</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="w-2/3 h-[2px] md:h-2/3 md:w-[2px] bg-gray-300 self-center"></div>
                                 <div className="flex flex-col gap-4 items-center">
-                                    <span className="font-medium text-primary">Templates</span>
+                                    <span className="font-semibold text-primary">Templates</span>
                                     <div className="flex flex-col items-center gap-2">
                                         <Image src="/resources/database.svg" alt="templates icon" width={52} height={52} className="h-12 w-12" />
                                     </div>
@@ -93,7 +93,7 @@ export default function FrameworkDiagram(props){
                         </div>
                     </div>
                     <div className="grid grid-cols-5 gap-4 items-center">
-                        <p className="col-span-5 md:col-span-1 text-base text-white font-light">OwlGrid open-source technologies</p>
+                        <p className="col-span-5 md:col-span-1 text-sm text-white font-light">OwlGrid open-source technologies</p>
                         <div className="col-span-5 md:col-span-4  bg-white rounded-lg py-4 ">
                             <div className="grid grid-cols-4 gap-3 md:gap-6 justify-center md:px-16">
                                 {technologies.map((elem, i)=>(
