@@ -73,7 +73,9 @@ export const Header = () => {
                     >
                         <div className="flex h-9 items-center justify-between">
                             <div className="flex">
-                                <Link href="/" className="flex justify-center items-center gap-2" aria-label="Global">
+                                <Link href="/" className="flex justify-center items-center gap-2" aria-label="Global"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
                                     <span className="sr-only">OwlGrid</span>
                                     <Image className="h-12" src="/logo.svg" alt="OwlGrid logo" width={54} height={54} />
                                     <span className="font-bold text-xl tracking-wide text-primary">OwlGrid</span>
@@ -98,6 +100,7 @@ export const Header = () => {
                                             key={item.name}
                                             href={item.href}
                                             className="block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
+                                            onClick={() => setMobileMenuOpen(false)}
                                         >
                                             {item.name}
                                         </Link>
@@ -107,6 +110,7 @@ export const Header = () => {
                                     <Link
                                         href="#contact"
                                         className="btn flex justify-center text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900"
+                                        onClick={() => setMobileMenuOpen(false)}
                                     >
                                         Stay in touch
                                     </Link>
