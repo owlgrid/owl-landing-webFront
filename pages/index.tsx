@@ -197,7 +197,8 @@ export default () => {
                         alt="Background image"
                         width={1920}
                         height={768}
-                        className="hidden sm:block absolute -z-10 inset-0 h-full w-full bg-cover bg-center"
+                        // className="hidden sm:block absolute -z-10 inset-0 h-full w-full bg-cover bg-center"
+                        className="hidden sm:block aspect-video sm:absolute -z-10 inset-0 sm:h-full w-full object-cover bg-center"
                     />
 
                     <div className="wrapper">
