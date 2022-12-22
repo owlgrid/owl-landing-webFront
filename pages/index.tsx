@@ -51,10 +51,10 @@ export default () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <div className="relative overflow-hidden min-h-screen md:flex md:flex-col">
+            <div className="relative overflow-hidden min-h-screen md:flex md:flex-col flex flex-col">
                 <Announcement />
                 <Header />
-                <div className="flex flex-col items-start sm:items-center mt-auto mb-auto pb-12">
+                <div className="flex flex-col items-center mt-auto mb-auto pb-12">
                     <div className="container mx-auto max-w-5xl px-6 py-12 sm:py-3">
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-2 sm:justify-center">
