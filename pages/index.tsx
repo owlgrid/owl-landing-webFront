@@ -247,13 +247,6 @@ export default () => {
                     <div className="my-12">
                         <FrameworkDiagram />
                     </div>
-                    <Image
-                        src="/framework.png"
-                        alt="Open source framework"
-                        width={1150}
-                        height={516}
-                        className="my-12"
-                    />
                 </section>
 
                 <section className="relative md:h-screen" id="app-builders">
