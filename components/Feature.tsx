@@ -23,15 +23,14 @@ export const Feature = ({ heading, description, reversed, src, alt }: Feature) =
             <div className="video-wrapper shrink">
                 <MuxPlayer
                     streamType="on-demand"
-                    playbackId="901nimvnfEhWgfR4ca45EmPuE63F007A8lM1JCZVVkfSc"
+                    playbackId={src}
                     autoPlay={true}
                     loop={true}
                     // @ts-ignore
                     style={{ width: '526px', height: '352px', '--controls': 'none' }}
                     metadata={{
-                        video_id: 'video-id-54321',
-                        video_title: 'Test video title',
-                        viewer_user_id: 'user-id-007',
+                        video_id: alt,
+                        video_title: alt
                     }}
                 />
             </div>

@@ -103,8 +103,8 @@ const Home = () => {
                                 Spend time on your core value: implement the functional logic.
                             </>
                         }
-                        src="/placeholder.png"
-                        alt="Placeholder"
+                        src="KItAngY6s5DO01lTNs9NZt7500W01Cqtubk1G01K6cYn8k8"
+                        alt="OwlGrid templates"
                     />
                     <Feature
                         heading={
@@ -113,8 +113,8 @@ const Home = () => {
                             </>
                         }
                         description="60% of the tasks spent on an application backend have no added value. Stop reinventing the wheel every project and start using a perfectly integrated environment custom-built for developers."
-                        src="/placeholder.png"
-                        alt="Placeholder"
+                        src="etfRHZDWeEYBub7cmQK02V02xtPuF5Dxumc2kObWCC7OA"
+                        alt="Value stack"
                         reversed
                     />
                     <Feature
@@ -133,8 +133,8 @@ const Home = () => {
                                 resource reuse with templates, data mock, etc.
                             </>
                         }
-                        src="/placeholder.png"
-                        alt="Placeholder"
+                        src="Dj9jaQLy00hgYXLBsTcXm01ffnDg2OVDSgxxAyxFb2bAM"
+                        alt="OwlGrid generation"
                     />
 
                     {/* <div className='flex justify-center'>
