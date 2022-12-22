@@ -36,7 +36,7 @@ export const Feature = ({ heading, description, reversed, src, alt }: Feature) =
                         video_id: alt,
                         video_title: alt
                     }}
-                    className=""
+                    className="w-full min-h-[100px] h-full md:w-auto"
                 />
             </div>
         </div>
