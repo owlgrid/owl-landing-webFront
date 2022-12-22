@@ -197,7 +197,6 @@ export default () => {
                         alt="Background image"
                         width={1920}
                         height={768}
-                        // className="hidden sm:block absolute -z-10 inset-0 h-full w-full bg-cover bg-center"
                         className="hidden sm:block aspect-video sm:absolute -z-10 inset-0 sm:h-full w-full object-cover bg-center"
                     />
 
@@ -207,7 +206,7 @@ export default () => {
                             <p className="subtitle-white">Everything you need to create a modern SaaS or mobile app.</p>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12 pb-0">
                             {features.map((elem, i) => (
                                 <Card
                                     key={i}
