@@ -6,9 +6,11 @@ interface Feature {
     heading: ReactNode;
     description: ReactNode;
     reversed?: boolean;
+    src?: string;
+    alt?: string;
 }
 
-export const Feature = ({ heading, description, reversed }: Feature) => {
+export const Feature = ({ heading, description, reversed, src, alt }: Feature) => {
     return (
         <div
             className={`flex gap-8 lg:gap-16 items-center flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'}`}
@@ -24,6 +26,7 @@ export const Feature = ({ heading, description, reversed }: Feature) => {
                     playbackId="901nimvnfEhWgfR4ca45EmPuE63F007A8lM1JCZVVkfSc"
                     autoPlay={true}
                     loop={true}
+                    // @ts-ignore
                     style={{ width: '526px', height: '352px', '--controls': 'none' }}
                     metadata={{
                         video_id: 'video-id-54321',

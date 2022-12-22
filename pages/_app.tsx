@@ -14,7 +14,7 @@ interface AppProps {
     pageProps: any;
 }
 
-export default ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
     return (
         <>
             <Head>
@@ -34,3 +34,5 @@ export default ({ Component, pageProps }: AppProps) => {
         </>
     );
 };
+
+export default App;

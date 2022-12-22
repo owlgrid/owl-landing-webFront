@@ -76,6 +76,7 @@
 
 .video-wrapper * {
     background-color: white !important;
+    --controls: 'none';
 }
 
 .backgroundGradientFull {

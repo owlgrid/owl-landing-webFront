@@ -42,7 +42,7 @@ const features = [
     },
 ];
 
-export default () => {
+const Home = () => {
     return (
         <>
             <Head>
@@ -242,3 +242,5 @@ export default () => {
         </>
     );
 };
+
+export default Home;
