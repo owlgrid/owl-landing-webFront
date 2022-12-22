@@ -74,10 +74,10 @@ export default () => {
                         </div>
 
                         <div className="mt-8 flex gap-x-4 sm:justify-center">
-                            <Button href="#features" primary>
+                            <Button href="#value" primary>
                                 Learn more
                             </Button>
-                            <Button href="/" secondary>
+                            <Button href="#contact" secondary>
                                 Stay informed
                             </Button>
                         </div>
