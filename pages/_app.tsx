@@ -1,16 +1,20 @@
 import '../styles/globals.css';
 
-import Layout from '../components/Layout';
-
 import { Inter } from '@next/font/google';
 import Head from 'next/head';
+import React from 'react';
 
 const inter = Inter({
     subsets: ['latin'],
     variable: '--font-inter',
 });
 
-export default function App({ Component, pageProps }) {
+interface AppProps {
+    Component: React.ComponentType;
+    pageProps: any;
+}
+
+export default ({ Component, pageProps }: AppProps) => {
     return (
         <>
             <Head>
@@ -29,4 +33,4 @@ export default function App({ Component, pageProps }) {
             <Component {...pageProps} />
         </>
     );
-}
+};

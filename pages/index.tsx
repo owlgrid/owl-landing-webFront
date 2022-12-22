@@ -1,17 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
-
-import Annoucement from '../components/Announcement';
-import Button from '../components/Button';
-import Header from '../components/Header';
-import Feature from '../components/Feature';
-import Card from '../components/Card';
-import FrameworkDiagram from '../components/FrameworkDiagram';
-import Footer from '../components/Footer';
-import CTA from '../components/CTA';
+import React from 'react';
+import { Announcement } from '../components/Announcement';
+import { Button } from '../components/Button';
+import { Card } from '../components/Card';
+import { CTA } from '../components/CTA';
+import { Feature } from '../components/Feature';
+import { Footer } from '../components/Footer';
+import { FrameworkDiagram } from '../components/FrameworkDiagram';
+import { Header } from '../components/Header';
 
 const features = [
     {
@@ -44,7 +42,7 @@ const features = [
     },
 ];
 
-export default function Home() {
+export default () => {
     return (
         <>
             <Head>
@@ -54,7 +52,7 @@ export default function Home() {
             </Head>
 
             <div className="relative overflow-hidden min-h-screen md:flex md:flex-col">
-                <Annoucement />
+                <Announcement />
                 <Header />
                 <div className="flex flex-col items-start sm:items-center mt-auto mb-auto pb-12">
                     <div className="container mx-auto max-w-5xl px-6 py-12 sm:py-3">
@@ -190,7 +188,10 @@ export default function Home() {
           </div> */}
                 </section>
 
-                <section className="relative py-12 bg-gradient bg-gradient-to-br from-blue to-purple sm:bg-none" id="features">
+                <section
+                    className="relative py-12 bg-gradient bg-gradient-to-br from-blue to-purple sm:bg-none"
+                    id="features"
+                >
                     <Image
                         src="/resources_bg.svg"
                         alt="Background image"
@@ -243,8 +244,8 @@ export default function Home() {
                         <p className="subtitle text-center">Based on well-proven open-source technologies.</p>
                     </div>
 
-                    <div className='my-12'>
-                      <FrameworkDiagram />
+                    <div className="my-12">
+                        <FrameworkDiagram />
                     </div>
                     <Image
                         src="/framework.png"
@@ -290,4 +291,4 @@ export default function Home() {
             <Footer />
         </>
     );
-}
+};

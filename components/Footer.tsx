@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 
 const navigation = [
     { name: 'Value', href: '#value' },
@@ -15,7 +16,7 @@ const resources = [
     { name: 'Github', href: 'http://github.com/owlgrid' },
 ];
 
-export default function Footer(props) {
+export const Footer = () => {
     return (
         <footer className="wrapper py-24">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-10">
@@ -23,10 +24,7 @@ export default function Footer(props) {
                     <span className="footer-section-title">HOME</span>
                     <ul className="flex flex-col gap-3">
                         {navigation.map((elem, i) => (
-                            <li
-                                key={i}
-                                className="footer-section-link"
-                            >
+                            <li key={i} className="footer-section-link">
                                 <Link href={elem.href} scroll={false}>
                                     {elem.name}
                                 </Link>
@@ -38,10 +36,7 @@ export default function Footer(props) {
                     <span className="footer-section-title">CONTACT</span>
                     <ul className="flex flex-col gap-2">
                         {contact.map((elem, i) => (
-                            <li
-                                key={i}
-                                className="footer-section-link"
-                            >
+                            <li key={i} className="footer-section-link">
                                 <Link href={elem.href}>{elem.name}</Link>
                             </li>
                         ))}
@@ -51,11 +46,10 @@ export default function Footer(props) {
                     <span className="footer-section-title">RESOURCES</span>
                     <ul className="flex flex-col gap-2">
                         {resources.map((elem, i) => (
-                            <li
-                                key={i}
-                                className="footer-section-link"
-                            >
-                                <Link href={elem.href} target="_blank">{elem.name}</Link>
+                            <li key={i} className="footer-section-link">
+                                <Link href={elem.href} target="_blank">
+                                    {elem.name}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -84,4 +78,4 @@ export default function Footer(props) {
             </div>
         </footer>
     );
-}
+};

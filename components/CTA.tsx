@@ -1,6 +1,7 @@
-import Button from './Button';
+import React from 'react';
+import { Button } from './Button';
 
-export default function CTA(props) {
+export const CTA = () => {
     return (
         <section className="wrapper py-24 max-w-5xl" id="contact">
             <div className="flex flex-col items-center justify-center gap-4">
@@ -25,4 +26,4 @@ export default function CTA(props) {
             </p>
         </section>
     );
-}
+};

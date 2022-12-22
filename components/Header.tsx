@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import React from 'react';
 
 const navigation = [
     { name: 'Value', href: '#value' },
@@ -12,13 +13,13 @@ const navigation = [
     { name: 'About', href: '#contact' },
 ];
 
-export default function Header() {
+export const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
         <header className="">
             <div className="px-6 py-3 max-w-6xl mx-auto lg:flex lg:flex-col lg:items-center">
-                <div className=''>
+                <div className="">
                     <nav
                         className="inline-flex w-full items-center justify-between lg:justify-between gap-4 lg:gap-x-28"
                         aria-label="Global"
@@ -65,8 +66,6 @@ export default function Header() {
                     {/* bottom divider */}
                     <div className="hidden lg:block h-[1px] w-full bg-gray-300 my-3 xl:mb-3"></div>
                 </div>
-
-                
 
                 <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                     <Dialog.Panel
@@ -120,4 +119,4 @@ export default function Header() {
             </div>
         </header>
     );
-}
+};

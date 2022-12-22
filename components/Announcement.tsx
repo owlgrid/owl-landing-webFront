@@ -1,7 +1,8 @@
 import { BellIcon } from '@heroicons/react/24/solid';
+import React from 'react';
 import Link from 'next/link';
 
-export default function Announcement(props) {
+export const Announcement = () => {
     return (
         <Link href="#contact">
             <div className="primary-gradient flex justify-center items-center gap-4 py-4 text-white">
@@ -10,4 +11,4 @@ export default function Announcement(props) {
             </div>
         </Link>
     );
-}
+};
