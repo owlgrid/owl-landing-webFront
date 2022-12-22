@@ -23,11 +23,14 @@ export const Feature = ({ heading, description, reversed, src, alt }: Feature) =
             <div className="video-wrapper shrink">
                 <MuxPlayer
                     streamType="on-demand"
+                    onCanPlay={() => console.log('can play')}
+                    // https://image.mux.com/Dj9jaQLy00hgYXLBsTcXm01ffnDg2OVDSgxxAyxFb2bAM/thumbnail.png?width=526&fit_mode=pad
                     playbackId={src}
                     autoPlay={true}
                     loop={true}
                     // @ts-ignore
-                    style={{ width: '526px', height: '352px', '--controls': 'none' }}
+                    style={{ '--controls': 'none' }}
+                    // style={{ width: '526px', height: '352px', '--controls': 'none' }}
                     metadata={{
                         video_id: alt,
                         video_title: alt
