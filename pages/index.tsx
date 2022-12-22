@@ -83,50 +83,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="absolute bottom-0 -z-10 transform-gpu overflow-hidden">
-                    <svg
-                        className="w-screen"
-                        width="100%"
-                        height="100%"
-                        viewBox="0 0 1920 479"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <g filter="url(#filter0_f_101_38)">
-                            <path
-                                d="M1594.61 343.617C953.335 595.574 461.953 450.677 313.305 343.617C269.593 324.006 164.311 233.697 -24.0278 203.241C-259.451 165.171 -286.073 581.208 -77.5 675C131.073 768.792 1463.96 822.953 1825 739.5C2320.5 728.5 2396.23 28.6725 1594.61 343.617Z"
-                                fill="url(#paint0_linear_101_38)"
-                            />
-                        </g>
-                        <defs>
-                            <filter
-                                id="filter0_f_101_38"
-                                x="-418.615"
-                                y="0.786743"
-                                width="2816.58"
-                                height="979.972"
-                                filterUnits="userSpaceOnUse"
-                                colorInterpolationFilters="sRGB"
-                            >
-                                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                                <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_101_38" />
-                            </filter>
-                            <linearGradient
-                                id="paint0_linear_101_38"
-                                x1="1817.5"
-                                y1="491"
-                                x2="1536.13"
-                                y2="-317.432"
-                                gradientUnits="userSpaceOnUse"
-                            >
-                                <stop stopColor="#945FFE" />
-                                <stop offset="1" stopColor="#0079FF" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
+                <div className="absolute bottom-0 -z-10 transform-gpu overflow-hidden backgroundGradientFull" />
             </div>
 
             <main className="overflow-x-hidden">

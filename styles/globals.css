@@ -77,3 +77,12 @@
 .video-wrapper * {
     background-color: white !important;
 }
+
+.backgroundGradientFull {
+    background: url('/gradient.svg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    width: 100%;
+    min-height: calc(100vh);
+}

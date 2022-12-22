@@ -55,7 +55,7 @@ export const Header = () => {
 
                         <div className="hidden sm:flex flex-1 justify-end lg:flex-none lg:justify-start">
                             <Link
-                                href="/"
+                                href="#contact"
                                 className="btn text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900 transition duration-150 shadow-sm"
                             >
                                 Stay in touch
@@ -106,7 +106,7 @@ export const Header = () => {
                                 </div>
                                 <div className="py-6">
                                     <Link
-                                        href="/"
+                                        href="#contact"
                                         className="btn flex justify-center text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900"
                                     >
                                         Stay in touch
