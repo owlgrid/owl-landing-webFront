@@ -30,8 +30,7 @@ export const Feature = ({ heading, description, reversed, src, alt }: Feature) =
                     // loop
                     muted
                     // @ts-ignore
-                    style={{aspectRatio: "263 / 176"}}
-                    // style={{ width: '526px', height: '352px', '--controls': 'none' }}
+                    style={{ aspectRatio: "263 / 176", '--controls': 'none' }}
                     metadata={{
                         video_id: alt,
                         video_title: alt
