@@ -215,17 +215,17 @@ const Home = () => {
                         <div className="space-y-6 sm:space-y-12">
                             <h2 className="text-primary md:text-white">Hello App Builders 👋🏻</h2>
                             <div className="max-w-prose md:max-w-md space-y-4">
-                                <p className="md:text-white">
+                                <p className="md:text-white leading-relaxed font-medium">
                                     We believe that building applications is a complete skill. Today, applications are
                                     built by two separate jobs: the &quot;products&quot; and the &quot;techs&quot;. This
                                     leads to latency and inaccuracies. We need to change this way of working.
                                 </p>
-                                <p className="md:text-white">
+                                <p className="md:text-white leading-relaxed font-medium">
                                     OwlGrid answers this problem. Having both strong product skills (user experience)
                                     and technical skills (how applications works), App Builders job is to quickly create
                                     powerful applications that respond very precisely to user needs.
                                 </p>
-                                <p className="md:text-white">
+                                <p className="md:text-white leading-relaxed font-medium">
                                     We built OwlGrid to give App Builders the right tool to put their potential to work.
                                 </p>
                             </div>

@@ -27,20 +27,20 @@ const features = [
 
 const technologies = [
     {
-        title: 'gRPC',
-        src: '/technologies/grpc.svg',
+        title: 'node',
+        src: '/technologies/node.png',
     },
     {
         title: 'Graphql',
         src: '/technologies/graphql.png',
     },
     {
-        title: 'docker',
-        src: '/technologies/docker.png',
+        title: 'kubernetes',
+        src: '/technologies/kubernetes.png',
     },
     {
-        title: 'elephantsql.png',
-        src: '/technologies/elephantsql.png',
+        title: 'mongo.jpeg',
+        src: '/technologies/mongo.jpeg',
     },
 ];
 
@@ -64,13 +64,13 @@ export const FrameworkDiagram = () => {
 
                 <div className="flex flex-col gap-4 justify-center col-span-8 lg:col-span-6">
                     <div className="grid grid-cols-5 gap-4 items-center">
-                        <p className="col-span-5 md:col-span-1 text-sm text-white font-light">
+                        <p className="col-span-5 md:col-span-1 text-base text-white font-light">
                             OwlGrid open-source framework
                         </p>
                         <div className="flex col-span-5 md:col-span-4 flex-1 bg-white rounded-lg py-4">
                             <div className="px-8 flex flex-col md:flex-row gap-8 w-full">
                                 <div className="flex flex-col gap-4 items-center">
-                                    <span className="font-semibold text-primary">Resources</span>
+                                    <span className="font-medium text-primary">Resources</span>
                                     <div className="grid grid-cols-4 gap-10">
                                         {features.map((elem, i) => (
                                             <div
@@ -95,7 +95,7 @@ export const FrameworkDiagram = () => {
                                 </div>
                                 <div className="w-2/3 h-[2px] md:h-2/3 md:w-[2px] bg-gray-300 self-center"></div>
                                 <div className="flex flex-col gap-4 items-center">
-                                    <span className="font-semibold text-primary">Templates</span>
+                                    <span className="font-medium text-primary">Templates</span>
                                     <div className="flex flex-col items-center gap-2">
                                         <Image
                                             src="/resources/database.svg"
@@ -110,7 +110,7 @@ export const FrameworkDiagram = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-5 gap-4 items-center">
-                        <p className="col-span-5 md:col-span-1 text-sm text-white font-light">
+                        <p className="col-span-5 md:col-span-1 text-base text-white font-light">
                             OwlGrid open-source technologies
                         </p>
                         <div className="col-span-5 md:col-span-4  bg-white rounded-lg py-4 ">

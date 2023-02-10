@@ -71,7 +71,7 @@ export const Footer = () => {
                 <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                     <li className="footer-legal-link">
                         <Link href="https://owlgrid.com" target="_blank">
-                            © 2022 OwlGrid
+                            © 2023 OwlGrid
                         </Link>
                     </li>
                 </ul>
