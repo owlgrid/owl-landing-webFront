@@ -7,7 +7,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-inter)', ...fontFamily.sans],
+                sans: ['var(--font-dm-sans)', ...fontFamily.sans],
+                title: ['var(--font-sora)', ...fontFamily.sans],
             },
             colors: {
                 primary: '#0F1F37',

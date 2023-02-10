@@ -84,12 +84,12 @@ export const FrameworkDiagram = () => {
                                                     height={52}
                                                     className="h-12 w-12"
                                                 />
-                                                <span className="text-sm font-medium text-primary">{elem.title}</span>
+                                                <span className="text-base font-medium text-primary">{elem.title}</span>
                                             </div>
                                         ))}
                                         <div className="col-span-2 md:col-span-1 flex flex-col items-center gap-2">
                                             <EllipsisHorizontalIcon className="h-12 w-12 text-primary" />
-                                            <span className="text-sm font-medium text-primary">& more</span>
+                                            <span className="text-base font-medium text-primary">& more</span>
                                         </div>
                                     </div>
                                 </div>

@@ -17,7 +17,7 @@ export const Feature = ({ heading, description, reversed, src, alt }: Feature) =
         >
             <div className="flex flex-col gap-4 md:gap-8 basis-full md:basis-1/2">
                 <h2 className="text-primary">{heading}</h2>
-                <p className="">{description}</p>
+                <p>{description}</p>
             </div>
 
             <div className="video-wrapper basis-full md:basis-1/2">

@@ -46,7 +46,7 @@ export const Header = () => {
                                     key={item.name}
                                     href={item.href}
                                     scroll={false}
-                                    className="font-semibold text-base text-gray-500 hover:text-purple transition duration-150"
+                                    className="text-base text-gray-500 hover:text-purple transition duration-150"
                                 >
                                     {item.name}
                                 </Link>

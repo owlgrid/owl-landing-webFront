@@ -21,7 +21,7 @@ export const Button = ({ primary, secondary, tertiary, xl, href, target, childre
     } else if (tertiary) {
         btnVariant = 'bg-white';
     }
-    let btnSize = 'px-6 py-3 text-sm font-semibold';
+    let btnSize = 'px-6 py-3 text-sm';
     if (xl) {
         btnSize = 'px-10 py-5 text-2xl';
     }
@@ -31,7 +31,7 @@ export const Button = ({ primary, secondary, tertiary, xl, href, target, childre
             href={href}
             scroll={false}
             target={target}
-            className={`flex items-center gap-2 rounded-md leading-6 transition duration-150 shadow-sm hover:shadow-md ${btnVariant} ${btnSize}`}
+            className={`flex items-center gap-2 rounded-md leading-6 transition duration-150 font-sans text-base font-medium ${btnVariant} ${btnSize}`}
         >
             {children}
         </Link>

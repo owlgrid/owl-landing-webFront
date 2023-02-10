@@ -10,8 +10,11 @@
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\""
     },
     "dependencies": {
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
         "@headlessui/react": "^1.7.7",
         "@heroicons/react": "^2.0.13",
+        "@mui/material": "^5.11.8",
         "@mux/mux-player": "^1.5.1",
         "@mux/mux-player-react": "^1.5.1",
         "@next/font": "^13.0.7",
