@@ -75,7 +75,8 @@ const Home = () => {
                             </p>
                         </div>
                         <HeroVideo
-                            thumnbailSrc='/thumbnail/thumbnail.png'
+                            thumbnailSrc='/thumbnail/thumbnail.png'
+                            thumbnailLargeSrc='/thumbnail/thumbnail-large.png'
                             altText='OwlGrid demo'
                             videoSrc='https://www.youtube.com/embed/PkGur1Lgdf0?autoplay=1&modestbranding=1&enablejsapi=1&rel=0&showinfo=0'
                         />
