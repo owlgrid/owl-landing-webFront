@@ -59,7 +59,7 @@ const Home = () => {
                 <Header />
                 <div className="flex flex-col items-center pb-0 h-full">
                     <div className="flex flex-col container mx-auto max-w-5xl px-6 pt-12 sm:place-content-between h-full">
-                        <div className="flex flex-col gap-6 h-max mx-4">
+                        <div className="flex flex-col gap-6 h-max mx-4 my-auto">
                             <div className="flex gap-2 sm:justify-center">
                                 <span className="font-title text-lg sm:text-xl leading-8 font-semibold flex justify-center text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple">
                                     Welcome to the next Firebase (on steroids)
