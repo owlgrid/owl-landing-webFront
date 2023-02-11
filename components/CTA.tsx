@@ -3,7 +3,7 @@ import { Button } from './Button';
 
 export const CTA = () => {
     return (
-        <section className="wrapper py-24 max-w-5xl" id="contact">
+        <section className="wrapper pt-24 pb-8 max-w-5xl" id="contact">
             <div className="flex flex-col items-center justify-center gap-4">
                 <h2 className="text-primary text-center">Stay in touch!</h2>
                 <p className="subtitle sm:text-center sm:max-w-2xl sm:mx-auto">

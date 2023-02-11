@@ -12,6 +12,7 @@ import { Footer } from '../components/Footer';
 import { FrameworkDiagram } from '../components/FrameworkDiagram';
 import { Header } from '../components/Header';
 import { HeroVideo } from '../components/HeroVideo';
+import { Partners } from '../components/Partners';
 
 const features = [
     {
@@ -53,12 +54,12 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <div className="relative overflow-hidden min-h-screen md:flex md:flex-col flex flex-col">
+            <div className="relative overflow-hidden min-h-screen md:flex md:flex-col flex flex-col h-screen">
                 <Announcement />
                 <Header />
-                <div className="flex flex-col items-center mt-auto mb-auto pb-12">
-                    <div className="container mx-auto max-w-5xl px-6 py-12 sm:py-3">
-                        <div className="flex flex-col gap-2">
+                <div className="flex flex-col items-center pb-0 h-full">
+                    <div className="flex flex-col container mx-auto max-w-5xl px-6 pt-12 sm:place-content-between h-full">
+                        <div className="flex flex-col gap-6 h-max mx-4">
                             <div className="flex gap-2 sm:justify-center">
                                 <span className="font-title text-lg sm:text-xl leading-8 font-semibold flex justify-center text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple">
                                     Welcome to the next Firebase (on steroids)
@@ -70,10 +71,11 @@ const Home = () => {
                                 App backends in a minute.
                             </h1>
 
-                            <p className="subtitle mt-6 mb-3 sm:text-center sm:max-w-md sm:mx-auto">
+                            <p className="subtitle sm:text-center sm:max-w-md sm:mx-auto">
                                 OwlGrid allows product and IT teams to quickly implement robust apps backends.
                             </p>
                         </div>
+                        <div className="mt-12 sm:mt-0" />
                         <HeroVideo
                             thumbnailSrc='/thumbnail/thumbnail.png'
                             thumbnailLargeSrc='/thumbnail/thumbnail-large.png'
@@ -89,7 +91,7 @@ const Home = () => {
                     <Feature
                         heading={
                             <>
-                                Implement app backends in <span className="text-blue">record</span> time.
+                                Implement app backends in <span className="text-blue font-title">record</span> time.
                             </>
                         }
                         description={
@@ -107,7 +109,7 @@ const Home = () => {
                     <Feature
                         heading={
                             <>
-                                Focus on the <span className="text-purple">features</span>, we handle the technique.
+                                Focus on the <span className="text-purple font-title">features</span>, we handle the technique.
                             </>
                         }
                         description="60% of the tasks spent on an application backend have no added value. Stop reinventing the wheel every project and start using a perfectly integrated environment custom-built for developers."
@@ -118,7 +120,7 @@ const Home = () => {
                     <Feature
                         heading={
                             <>
-                                Build applications that <span className="text-blue">last</span>.
+                                Build applications that <span className="text-blue font-title">last</span>.
                             </>
                         }
                         description={
@@ -233,8 +235,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-
                 <CTA />
+                <Partners />
             </main>
             <Footer />
         </>

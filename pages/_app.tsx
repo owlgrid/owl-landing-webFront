@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 const DMSans = DM_Sans({
-    weight: ["500"],
+    weight: ["400", "500"],
     subsets: ['latin']
 });
 

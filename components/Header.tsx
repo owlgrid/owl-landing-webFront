@@ -46,7 +46,7 @@ export const Header = () => {
                                     key={item.name}
                                     href={item.href}
                                     scroll={false}
-                                    className="text-base text-gray-500 hover:text-purple transition duration-150"
+                                    className="text-title text-gray-500 hover:text-purple transition duration-150 text-lg font-medium"
                                 >
                                     {item.name}
                                 </Link>
@@ -99,7 +99,7 @@ export const Header = () => {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className="block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
+                                            className="block rounded-lg py-2 px-3 text-title font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
                                             onClick={() => setMobileMenuOpen(false)}
                                         >
                                             {item.name}

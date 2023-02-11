@@ -41,13 +41,13 @@ export const HeroVideo: FC<HeroVideoProps> = ({ thumbnailSrc, thumbnailLargeSrc:
             <img
                 src={thumbnailSrc}
                 alt={thumbnailAlt}
-                className="block sm:hidden w-full cursor-pointer scale-100 hover:scale-105 transition duration-300 ease-in-out mt-8"
+                className="block md:hidden w-full cursor-pointer scale-100 hover:scale-105 transition duration-300 ease-in-out"
                 onClick={handleClickOpen}
             />
             <img
                 src={thumbnailLargeSrc}
                 alt={thumbnailAlt}
-                className="hidden md:block w-full cursor-pointer scale-100 hover:scale-105 transition duration-300 ease-in-out mt-8"
+                className="hidden md:block w-full cursor-pointer scale-100 hover:scale-105 transition duration-300 ease-in-out"
                 onClick={handleClickOpen}
             />
         </>

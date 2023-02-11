@@ -15,7 +15,7 @@
         @apply font-sans text-gray-800;
     }
     h1 {
-        @apply font-title text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl;
+        @apply font-title text-5xl font-bold tracking-tight sm:text-6xl md:text-6xl lg:text-6xl;
     }
     h2 {
         @apply font-title font-bold text-3xl md:text-4xl;
@@ -24,7 +24,7 @@
         @apply font-title text-xl font-bold;
     }
     p {
-        @apply text-lg sm:text-xl leading-normal text-gray-500;
+        @apply text-lg font-normal sm:text-xl leading-normal text-gray-500;
     }
 }
 
@@ -38,7 +38,7 @@
     }
 
     .btn {
-        @apply font-title flex items-center px-6 py-3 text-lg font-semibold gap-2 rounded-md leading-6 transition duration-150;
+        @apply font-sans flex items-center px-6 py-3 text-base font-semibold gap-2 rounded-md leading-6 transition duration-150;
     }
     .btn-primary-gradient {
         background: linear-gradient(316.31deg, #945ffe 10.57%, #0079ff 93.61%);
