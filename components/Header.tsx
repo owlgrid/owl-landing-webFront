@@ -56,7 +56,7 @@ export const Header = () => {
                         <div className="hidden sm:flex flex-1 justify-end lg:flex-none lg:justify-start">
                             <Link
                                 href="#contact"
-                                className="btn text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900 transition duration-150 shadow-sm"
+                                className="btn text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900 transition duration-150 shadow-sm text-lg font-medium"
                             >
                                 Stay in touch
                             </Link>
@@ -77,8 +77,7 @@ export const Header = () => {
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     <span className="sr-only">OwlGrid</span>
-                                    <Image className="h-12" src="/logo.svg" alt="OwlGrid logo" width={54} height={54} />
-                                    <span className="font-bold text-xl tracking-wide text-primary">OwlGrid</span>
+                                    <Image className="h-12" src="/logo_w_text.svg" alt="OwlGrid logo" width={160} height={54} />
                                 </Link>
                             </div>
                             <div className="flex">
@@ -99,7 +98,7 @@ export const Header = () => {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className="block rounded-lg py-2 px-3 text-title font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
+                                            className="block rounded-lg py-2 px-3 text-title font-medium leading-7 text-gray-800 hover:bg-gray-400/10 text-lg"
                                             onClick={() => setMobileMenuOpen(false)}
                                         >
                                             {item.name}
@@ -109,7 +108,7 @@ export const Header = () => {
                                 <div className="py-6">
                                     <Link
                                         href="#contact"
-                                        className="btn flex justify-center text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-900"
+                                        className="btn font-medium flex justify-center text-gray-500 bg-[#F1F2F4] hover:bg-gray-200 hover:text-gray-800 text-lg"
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
                                         Stay in touch

@@ -163,7 +163,7 @@ const Home = () => {
                             <p className="subtitle-white">Everything you need to create a modern SaaS or mobile app.</p>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12 pb-0">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
                             {features.map((elem, i) => (
                                 <Card
                                     key={i}

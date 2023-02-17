@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import { TiltingBox } from './TiltingBox';
 
 export const CTA = () => {
     return (
@@ -13,9 +14,11 @@ export const CTA = () => {
             </div>
 
             <div className="flex justify-center my-12">
-                <Button href="https://www.linkedin.com/company/owlgrid/" target="_blank" primary xl>
-                    LinkedIn — OwlGrid
-                </Button>
+                <TiltingBox max={10}>
+                    <Button href="https://www.linkedin.com/company/owlgrid/" target="_blank" primary xl>
+                        LinkedIn — OwlGrid
+                    </Button>
+                </TiltingBox>
             </div>
             <p className="subtitle text-center">
                 Or contact us on{' '}

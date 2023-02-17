@@ -30,7 +30,7 @@
 
 @layer components {
     .wrapper {
-        @apply overflow-x-hidden container mx-auto max-w-6xl px-6 py-3;
+        @apply container mx-auto max-w-6xl px-6 py-3;
     }
 
     .primary-gradient {
@@ -65,7 +65,7 @@
     }
 
     .footer-section-link {
-        @apply font-title font-semibold text-lg text-gray-700 hover:text-gray-400 transition duration-100;
+        @apply font-title text-lg font-medium text-gray-800 hover:text-gray-400 transition duration-100;
     }
 
     .footer-legal-link {
