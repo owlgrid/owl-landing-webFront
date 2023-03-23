@@ -1,10 +1,7 @@
-import MuxPlayer from '@mux/mux-player-react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-import React from 'react';
 import { Announcement } from '../components/Announcement';
-import { Button } from '../components/Button';
 import { Card } from '../components/Card';
 import { CTA } from '../components/CTA';
 import { Feature } from '../components/Feature';
@@ -76,11 +73,17 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="mt-12 sm:mt-0" />
-                        <HeroVideo
+                        {/* <HeroVideo
                             thumbnailSrc='/thumbnail/thumbnail.png'
                             thumbnailLargeSrc='/thumbnail/thumbnail-large.png'
                             altText='OwlGrid demo'
                             videoSrc='https://www.youtube.com/embed/PkGur1Lgdf0?autoplay=1&modestbranding=1&enablejsapi=1&rel=0&showinfo=0'
+                        /> */}
+                        <HeroVideo
+                            thumbnailSrc='/thumbnail/thumbnail.png'
+                            thumbnailLargeSrc='/thumbnail/thumbnail-large.png'
+                            altText='OwlGrid demo'
+                            videoSrc='https://www.youtube.com/embed/c285QsFd3Jk?autoplay=1&modestbranding=1&enablejsapi=1&rel=0&showinfo=0'
                         />
                     </div>
                 </div>
